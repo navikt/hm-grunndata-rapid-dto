@@ -88,7 +88,3 @@ enum class AttributeNames(private val type: AttributeType) {
 enum class AttributeType {
     STRING, HTML, URL, LIST, JSON, BOOLEAN
 }
-
-inline fun <reified T : Enum<T>> enumContains(name: String): Boolean {
-    return T::class.java.enumConstants.any { it.name == name}
-}

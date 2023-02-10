@@ -3,13 +3,11 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 val jvmTarget = "17"
-val micronautVersion="3.8.4"
 val junitJupiterVersion = "5.9.0"
-val jacksonVersion = "2.13.4"
 val mockkVersion = "1.13.2"
 val kotestVersion = "5.5.0"
 
-group = "no.nav.hm"
+group = "no.nav.hm.grunndata"
 version = properties["version"] ?: "local-build"
 
 plugins {
@@ -17,7 +15,7 @@ plugins {
     kotlin("kapt") version "1.7.0"
     kotlin("plugin.allopen") version "1.7.0"
     id("java")
-    id("io.micronaut.application") version "3.6.6"
+    id("maven-publish")
 }
 
 configurations.all {
@@ -27,23 +25,44 @@ configurations.all {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("io.micronaut:micronaut-runtime")
-    implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
-
-    testImplementation("io.mockk:mockk:$mockkVersion")
-    testImplementation("io.micronaut.test:micronaut-test-kotest5")
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
-    testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.0")
 }
 
-micronaut {
-    version.set(micronautVersion)
-    testRuntime("netty")
-    testRuntime("junit5")
-    processing {
-        incremental(true)
+val githubUser: String? by project
+val githubPassword: String? by project
+
+publishing {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/navikt/hm-grunndata-rapid-dto")
+            credentials {
+                username = githubUser
+                password = githubPassword
+            }
+        }
+    }
+    publications {
+        create<MavenPublication>("mavenJava") {
+
+            pom {
+                name.set("hm-grunndata-rapid-dto")
+                description.set("hm grunndata rapid dto lib")
+                url.set("https://github.com/navikt/hm-grunndata-rapid-dto")
+
+                licenses {
+                    license {
+                        name.set("MIT License")
+                        url.set("https://opensource.org/licenses/MIT")
+                    }
+                }
+
+                scm {
+                    connection.set("scm:git:https://github.com/navikt/hm-grunndata-rapid-dto.git")
+                    developerConnection.set("scm:git:https://github.com/navikt/hm-grunndata-rapid-dto.git")
+                    url.set("https://github.com/navikt/hm-grunndata-rapid-dto")
+                }
+            }
+            from(components["java"])
+        }
     }
 }
 
