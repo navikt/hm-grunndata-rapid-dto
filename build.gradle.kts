@@ -6,7 +6,6 @@ val jvmTarget = "17"
 val micronautVersion="3.8.4"
 val junitJupiterVersion = "5.9.0"
 val jacksonVersion = "2.13.4"
-val tcVersion= "1.16.3"
 val mockkVersion = "1.13.2"
 val kotestVersion = "5.5.0"
 
@@ -28,11 +27,6 @@ configurations.all {
 }
 
 dependencies {
-    // coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive")
-
-
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("io.micronaut:micronaut-runtime")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
@@ -41,9 +35,7 @@ dependencies {
     testImplementation("io.micronaut.test:micronaut-test-kotest5")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
-
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.0")
-    testImplementation("org.testcontainers:postgresql:${tcVersion}")
 }
 
 micronaut {
