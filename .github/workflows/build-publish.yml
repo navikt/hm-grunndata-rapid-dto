@@ -1,0 +1,27 @@
+name: build and publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '17.x'
+      - name: test and build
+        run: ./gradlew clean build
+      - uses: snyk/actions/setup@master
+      - name: snyk
+        run: snyk test --org=hjelpemiddelbehov --severity-threshold=high
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: publish
+        run: ./gradlew -Pversion="$(TZ="Europe/Oslo" date +'%Y%m%d%H%M')" build publish
+        env:
+          ORG_GRADLE_PROJECT_githubUser: x-access-token
+          ORG_GRADLE_PROJECT_githubPassword: ${{ secrets.GITHUB_TOKEN }}
