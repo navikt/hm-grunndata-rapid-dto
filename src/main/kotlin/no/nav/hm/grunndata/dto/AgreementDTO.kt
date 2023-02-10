@@ -10,14 +10,14 @@ data class AgreementDTO(
     val resume: String?,
     val text: String?,
     val reference: String,
-    val published: LocalDateTime,
-    val expired: LocalDateTime,
+    val published: LocalDateTime = LocalDateTime.now(),
+    val expired: LocalDateTime = LocalDateTime.now(),
     val attachments: List<AgreementAttachment> = emptyList(),
     val posts: List<AgreementPost> = emptyList(),
     val createdBy:String,
     val updatedBy: String,
-    val created: LocalDateTime,
-    val updated: LocalDateTime,
+    val created: LocalDateTime = LocalDateTime.now(),
+    val updated: LocalDateTime = LocalDateTime.now(),
 )
 
 data class AgreementPost (

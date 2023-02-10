@@ -11,8 +11,8 @@ data class SupplierDTO(
     val info: SupplierInfo,
     val createdBy: String,
     val updatedBy: String,
-    val created: LocalDateTime,
-    val updated: LocalDateTime
+    val created: LocalDateTime = LocalDateTime.now(),
+    val updated: LocalDateTime = LocalDateTime.now(),
 )
 
 data class SupplierInfo (
