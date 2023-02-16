@@ -13,7 +13,8 @@ data class SupplierDTO(
     val updatedBy: String,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
-)
+    override val dtoVersion: String = rapidDTOVersion
+) : RapidDTO
 
 data class SupplierInfo (
     val address: String?=null,

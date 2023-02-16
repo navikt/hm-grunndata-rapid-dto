@@ -18,7 +18,8 @@ data class AgreementDTO(
     val updatedBy: String,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
-)
+    override val dtoVersion: String = rapidDTOVersion
+): RapidDTO
 
 data class AgreementPost (
     val identifier: String,

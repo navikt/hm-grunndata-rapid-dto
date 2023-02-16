@@ -21,7 +21,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: publish
-        run: ./gradlew -Pversion="$(TZ="Europe/Oslo" date +'%Y%m%d%H%M')" build publish
+        run: ./gradlew -Pversion="$(TZ="Europe/Oslo" date +'%Y%m%d%H%M')" build publish generateVersionProp
         env:
           ORG_GRADLE_PROJECT_githubUser: x-access-token
           ORG_GRADLE_PROJECT_githubPassword: ${{ secrets.GITHUB_TOKEN }}

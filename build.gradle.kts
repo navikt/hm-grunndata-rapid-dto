@@ -1,5 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.util.Properties
+import java.io.FileOutputStream
 
 
 val jvmTarget = "17"
@@ -25,6 +27,8 @@ configurations.all {
 }
 
 dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
 }
 
 val githubUser: String? by project
@@ -96,11 +100,22 @@ tasks.withType<Wrapper> {
     gradleVersion = "7.5.1"
 }
 
+
+
+tasks.register("generateVersionProp") {
+    doLast {
+        val props = Properties()
+        props["version"] = project.version.toString()
+        val ous = FileOutputStream(File("$buildDir/resources/main/version.properties"))
+        props.store(ous, null)
+        ous.close()
+    }
+}
+
 repositories {
     mavenLocal()
     mavenCentral()
     maven("https://packages.confluent.io/maven/")
     maven("https://github-package-registry-mirror.gc.nav.no/cached/maven-release")
-
 }
 

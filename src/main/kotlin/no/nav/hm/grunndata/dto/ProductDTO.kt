@@ -26,8 +26,9 @@ data class ProductDTO(
     val agreementInfo: AgreementInfo?=null,
     val hasAgreement: Boolean = (agreementInfo!=null && agreementInfo.expired.isAfter(LocalDateTime.now())),
     val createdBy: String,
-    val updatedBy: String
-)
+    val updatedBy: String,
+    override val dtoVersion: String = rapidDTOVersion
+) : RapidDTO
 
 data class TechData (
     val key:    String,
