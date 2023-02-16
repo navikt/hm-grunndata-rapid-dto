@@ -5,7 +5,7 @@ import java.time.LocalDateTime
 import java.util.*
 
 data class ProductDTO(
-    val id: UUID,
+    override val id: UUID,
     val supplier: SupplierDTO,
     val title: String,
     val attributes: Map<AttributeNames, Any>,

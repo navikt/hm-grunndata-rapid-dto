@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 import java.util.*
 
 data class AgreementDTO(
-    val id: UUID,
+    override val id: UUID,
     val identifier: String,
     val title: String,
     val resume: String?,

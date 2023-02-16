@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 import java.util.*
 
 data class SupplierDTO(
-    val id: UUID,
+    override val id: UUID,
     val identifier: String,
     val status : SupplierStatus = SupplierStatus.ACTIVE,
     val name: String,

@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 import java.util.*
 
 data class ProductRegistrationDTO(
-    val id: UUID = UUID.randomUUID(),
+    override val id: UUID,
     val supplierId: UUID,
     val supplierRef: String,
     val HMSArtNr: String?,
