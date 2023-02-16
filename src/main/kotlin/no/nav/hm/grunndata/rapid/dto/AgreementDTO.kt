@@ -1,4 +1,4 @@
-package no.nav.hm.grunndata.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import java.time.LocalDateTime
 import java.util.*

@@ -1,4 +1,4 @@
-package no.nav.hm.grunndata.dto
+package no.nav.hm.grunndata.rapid.dto
 
 interface RapidDTO {
     val dtoVersion: String
