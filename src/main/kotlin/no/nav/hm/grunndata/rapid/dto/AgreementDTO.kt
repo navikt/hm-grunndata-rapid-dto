@@ -31,6 +31,6 @@ data class AgreementPost (
 
 data class AgreementAttachment (
     val title: String?,
-    val media: List<Media> = emptyList(),
+    val media: List<MediaDTO> = emptyList(),
     val description: String?,
 )

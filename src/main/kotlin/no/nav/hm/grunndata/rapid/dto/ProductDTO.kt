@@ -18,7 +18,7 @@ data class ProductDTO(
     val sparePart: Boolean = false,
     val seriesId: String?=null,
     val techData: List<TechData> = emptyList(),
-    val media: List<Media> = emptyList(),
+    val media: List<MediaDTO> = emptyList(),
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val published: LocalDateTime = LocalDateTime.now(),
@@ -50,15 +50,6 @@ data class AgreementInfo (
 enum class ProductStatus {
     ACTIVE, INACTIVE
 }
-
-data class Media (
-    val id:   UUID = UUID.randomUUID(),
-    val order:  Int=1,
-    val type: MediaType = MediaType.IMAGE,
-    val uri:    String,
-    val text:   String?=null,
-    val source: MediaSourceType = MediaSourceType.HMDB
-)
 
 enum class MediaSourceType {
     HMDB, GCP, EXTERNALURL
