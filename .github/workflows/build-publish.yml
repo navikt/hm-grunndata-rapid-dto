@@ -2,9 +2,13 @@ name: build and publish
 
 on:
   push:
+    paths-ignore:
+      - "**.md"
+      - ".gitignore"
+      - "LICENCE"
+      - "CODEOWNERS"
     branches:
       - main
-
 jobs:
   build-publish:
     runs-on: ubuntu-latest
