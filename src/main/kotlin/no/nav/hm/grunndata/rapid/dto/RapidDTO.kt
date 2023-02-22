@@ -9,4 +9,4 @@ interface RapidDTO {
 
 val rapidDTOVersion = RapidDTO::class.java.classLoader.getResource("version.properties")!!
 .readText()
-.substringAfter("=").toLong()
+.substringAfter("=").trim().toLong()
