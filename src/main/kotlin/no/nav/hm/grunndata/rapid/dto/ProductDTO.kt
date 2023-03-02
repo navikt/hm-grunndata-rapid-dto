@@ -59,6 +59,7 @@ enum class MediaType {
     PDF,
     IMAGE,
     VIDEO,
+    XLS,
     OTHER
 }
 
