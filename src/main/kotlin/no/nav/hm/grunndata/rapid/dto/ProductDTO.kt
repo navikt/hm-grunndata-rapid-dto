@@ -1,6 +1,7 @@
 package no.nav.hm.grunndata.rapid.dto
 
 
+import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
 
@@ -52,7 +53,11 @@ enum class ProductStatus {
 }
 
 enum class MediaSourceType {
-    HMDB, GCP, EXTERNALURL
+    HMDB,
+    GCP,
+    EXTERNALURL,
+    @JsonEnumDefaultValue
+    UNKNOWN
 }
 
 enum class MediaType {
@@ -60,6 +65,7 @@ enum class MediaType {
     IMAGE,
     VIDEO,
     XLS,
+    @JsonEnumDefaultValue
     OTHER
 }
 

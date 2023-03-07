@@ -9,6 +9,7 @@ val junitJupiterVersion = "5.9.0"
 val mockkVersion = "1.13.2"
 val kotestVersion = "5.5.0"
 val logbackClassicVersion = "1.4.5"
+val jacksonVersion = "2.14.1"
 
 group = "no.nav.hm.grunndata"
 version = properties["version"] ?: "local-build"
@@ -29,6 +30,7 @@ configurations.all {
 
 dependencies {
     api("ch.qos.logback:logback-classic:$logbackClassicVersion")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
 }
