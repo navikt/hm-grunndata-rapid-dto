@@ -7,7 +7,7 @@ data class ProductRegistrationDTO(
     override val id: UUID,
     val supplierId: UUID,
     val supplierRef: String,
-    val HMSArtNr: String?,
+    val hmsArtNr: String?,
     val title: String,
     val draftStatus: DraftStatus = DraftStatus.DRAFT,
     val adminStatus: AdminStatus = AdminStatus.NOT_APPROVED,
