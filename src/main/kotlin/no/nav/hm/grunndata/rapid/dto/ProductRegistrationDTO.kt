@@ -24,8 +24,7 @@ data class ProductRegistrationDTO(
     val updatedBy: String,
     val createdByAdmin: Boolean = false,
     val productDTO: ProductDTO,
-    val version: Long?=null,
-    override val dtoVersion: Long = rapidDTOVersion
+    val version: Long?=null
 ) : RapidDTO
 
 enum class RegistrationStatus {

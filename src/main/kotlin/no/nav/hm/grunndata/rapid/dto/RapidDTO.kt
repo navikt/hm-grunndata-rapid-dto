@@ -4,7 +4,6 @@ import java.util.*
 
 interface RapidDTO {
     val id: UUID
-    val dtoVersion: Long
 }
 
 val rapidDTOVersion = RapidDTO::class.java.classLoader.getResource("version.properties")!!
