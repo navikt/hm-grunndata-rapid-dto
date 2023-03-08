@@ -53,7 +53,7 @@ enum class ProductStatus {
 
 enum class MediaSourceType {
     HMDB,
-    GCP,
+    REGISTER,
     EXTERNALURL,
     @JsonEnumDefaultValue
     UNKNOWN
