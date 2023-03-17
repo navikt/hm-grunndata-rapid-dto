@@ -17,7 +17,7 @@ data class ProductDTO(
     val isoCategory: String,
     val accessory: Boolean = false,
     val sparePart: Boolean = false,
-    val seriesId: String?=null,
+    val seriesId: String? = id.toString(),
     val techData: List<TechData> = emptyList(),
     val media: List<MediaDTO> = emptyList(),
     val created: LocalDateTime = LocalDateTime.now(),
