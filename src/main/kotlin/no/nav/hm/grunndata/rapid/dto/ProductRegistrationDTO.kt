@@ -9,6 +9,7 @@ data class ProductRegistrationDTO(
     val supplierRef: String,
     val hmsArtNr: String?,
     val title: String,
+    val articleName: String,
     val draftStatus: DraftStatus = DraftStatus.DRAFT,
     val adminStatus: AdminStatus = AdminStatus.NOT_APPROVED,
     val status: RegistrationStatus = RegistrationStatus.ACTIVE,
