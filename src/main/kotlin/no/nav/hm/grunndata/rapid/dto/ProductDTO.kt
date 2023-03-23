@@ -77,7 +77,7 @@ enum class AttributeNames(private val type: AttributeType) {
     compatible(AttributeType.LIST),
     series(AttributeType.STRING),
     keywords(AttributeType.LIST),
-    shortdescription(AttributeType.HTML),
+    shortDescription(AttributeType.HTML),
     text(AttributeType.HTML),
     url(AttributeType.URL),
     tags(AttributeType.LIST),
