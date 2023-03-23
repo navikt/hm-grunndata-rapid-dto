@@ -9,6 +9,7 @@ data class ProductDTO(
     override val id: UUID,
     val supplier: SupplierDTO,
     val title: String,
+    val articleName: String,
     val attributes: Map<AttributeNames, Any>,
     val status: ProductStatus = ProductStatus.ACTIVE,
     val hmsArtNr: String?=null,
@@ -71,6 +72,7 @@ enum class MediaType {
 enum class AttributeNames(private val type: AttributeType) {
 
     manufacturer(AttributeType.STRING),
+    @Deprecated("moved to articleName")
     articlename(AttributeType.STRING),
     compatible(AttributeType.LIST),
     series(AttributeType.STRING),
