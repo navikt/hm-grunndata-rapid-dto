@@ -26,7 +26,7 @@ data class ProductDTO(
     val published: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = updated.plusYears(20),
     val agreementInfo: AgreementInfo?=null,
-    val hasAgreement: Boolean = (agreementInfo!=null && agreementInfo.expired.isAfter(LocalDateTime.now())),
+    val hasAgreement: Boolean = (agreementInfo!=null),
     val createdBy: String,
     val updatedBy: String
 ) : RapidDTO
@@ -39,13 +39,13 @@ data class TechData (
 
 
 data class AgreementInfo (
-    val id: UUID,
+    val id: UUID ?= null,
     val identifier: String?=null,
     val rank: Int,
     val postNr: Int,
     val postIdentifier: String?=null,
-    val reference: String?=null,
-    val expired: LocalDateTime,
+    val reference: String,
+    val expired: LocalDateTime?,
 )
 
 enum class ProductStatus {
