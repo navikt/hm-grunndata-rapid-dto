@@ -45,7 +45,7 @@ data class AgreementInfo (
     val postNr: Int,
     val postIdentifier: String?=null,
     val reference: String,
-    val expired: LocalDateTime?,
+    val expired: LocalDateTime?=null,
 )
 
 enum class ProductStatus {
