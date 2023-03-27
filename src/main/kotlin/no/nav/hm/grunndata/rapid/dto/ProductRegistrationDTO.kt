@@ -11,7 +11,7 @@ data class ProductRegistrationDTO(
     val title: String,
     val articleName: String,
     val draftStatus: DraftStatus = DraftStatus.DRAFT,
-    val adminStatus: AdminStatus = AdminStatus.NOT_APPROVED,
+    val adminStatus: AdminStatus = AdminStatus.PENDING,
     val status: RegistrationStatus = RegistrationStatus.ACTIVE,
     val message: String?,
     val adminInfo: AdminInfo?=null,
@@ -33,7 +33,7 @@ enum class RegistrationStatus {
 }
 
 enum class AdminStatus {
-    NOT_APPROVED, APPROVED
+    PENDING, APPROVED, REJECTED
 }
 
 enum class DraftStatus {
