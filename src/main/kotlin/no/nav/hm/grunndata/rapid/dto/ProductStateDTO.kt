@@ -10,7 +10,7 @@ data class ProductStateDTO(
     val supplierRef: String,
     val productDTO: ProductDTO,
     val adminStatus: AdminStatus?=null,
-    val message: String? = null,
+    val adminMessage: String? = null,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now()
 ): RapidDTO
