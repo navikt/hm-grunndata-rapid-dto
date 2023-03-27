@@ -1,9 +1,10 @@
 package no.nav.hm.grunndata.rapid.dto
 
+import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
 
-data class ProductRegistrationDTO(
+data class ProductRegistrationDTO (
     override val id: UUID,
     val supplierId: UUID,
     val supplierRef: String,
@@ -33,7 +34,10 @@ enum class RegistrationStatus {
 }
 
 enum class AdminStatus {
-    PENDING, APPROVED, REJECTED
+    @JsonEnumDefaultValue
+    PENDING,
+    APPROVED,
+    REJECTED
 }
 
 enum class DraftStatus {
