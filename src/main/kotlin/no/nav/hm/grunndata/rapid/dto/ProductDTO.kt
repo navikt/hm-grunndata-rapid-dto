@@ -20,7 +20,7 @@ data class ProductDTO(
     val sparePart: Boolean = false,
     val seriesId: String? = id.toString(),
     val techData: List<TechData> = emptyList(),
-    val media: List<MediaDTO> = emptyList(),
+    val media: List<MediaInfo> = emptyList(),
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val published: LocalDateTime = LocalDateTime.now(),

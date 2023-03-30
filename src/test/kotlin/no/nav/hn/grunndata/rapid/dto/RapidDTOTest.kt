@@ -56,7 +56,7 @@ class RapidDTOTest() {
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
             media = listOf(
-                MediaDTO(
+                MediaInfo(
                     uri = "123.jpg",
                     text = "bilde av produktet",
                     source = MediaSourceType.EXTERNALURL,
