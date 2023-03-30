@@ -6,14 +6,9 @@ import java.util.*
 
 data class ProductRegistrationDTO (
     override val id: UUID,
-    val supplierId: UUID,
-    val supplierRef: String,
-    val hmsArtNr: String?,
-    val title: String,
-    val articleName: String,
     val draftStatus: DraftStatus = DraftStatus.DRAFT,
     val adminStatus: AdminStatus = AdminStatus.PENDING,
-    val status: RegistrationStatus = RegistrationStatus.ACTIVE,
+    val registrationStatus: RegistrationStatus = RegistrationStatus.ACTIVE,
     val message: String?,
     val adminInfo: AdminInfo?=null,
     val created: LocalDateTime = LocalDateTime.now(),

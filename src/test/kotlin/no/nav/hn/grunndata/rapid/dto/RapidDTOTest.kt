@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
-import com.fasterxml.jackson.module.kotlin.KotlinModule
 import com.fasterxml.jackson.module.kotlin.kotlinModule
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
@@ -77,14 +76,9 @@ class RapidDTOTest() {
         )
         val registration = ProductRegistrationDTO(
             id = productDTO.id,
-            supplierId = productDTO.supplier.id,
-            supplierRef = productDTO.supplierRef,
-            hmsArtNr = productDTO.hmsArtNr,
-            title = productDTO.title,
-            articleName = productDTO.articleName,
             draftStatus = DraftStatus.DRAFT,
             adminStatus = AdminStatus.PENDING,
-            status = RegistrationStatus.ACTIVE,
+            registrationStatus = RegistrationStatus.ACTIVE,
             message = "Melding til leverandør",
             adminInfo = null,
             createdByAdmin = false,
