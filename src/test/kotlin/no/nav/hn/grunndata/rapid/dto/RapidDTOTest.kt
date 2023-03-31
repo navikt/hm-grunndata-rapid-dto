@@ -10,17 +10,18 @@ import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
 import no.nav.hm.grunndata.rapid.dto.*
 import org.junit.jupiter.api.Test
+import java.awt.SystemColor.text
 import java.time.LocalDateTime
 import java.util.*
 
 
 class RapidDTOTest() {
 
-    val supplier = SupplierDTO(id = UUID.randomUUID(), identifier = "test-123", createdBy = "test", updatedBy = "test",
+    private val supplier = SupplierDTO(id = UUID.randomUUID(), identifier = "test-123", createdBy = "test", updatedBy = "test",
         name = "testsupplier", info = SupplierInfo()
     )
 
-    val objectMapper = ObjectMapper()
+    private val objectMapper: ObjectMapper = ObjectMapper()
         .registerModule(kotlinModule())
         .registerModule(JavaTimeModule())
         .disable(SerializationFeature.WRITE_DATE_TIMESTAMPS_AS_NANOSECONDS)
@@ -43,9 +44,9 @@ class RapidDTOTest() {
             supplier = supplier,
             title = "Dette er produkt 1",
             articleName = "Dette er produkt 1 med og med",
-            attributes = mapOf(
-                AttributeNames.shortdescription to "En kort beskrivelse av produktet",
-                AttributeNames.text to "En lang beskrivelse av produktet"
+            attributes = Attributes (
+                shortdescription = "En kort beskrivelse av produktet",
+                text =  "En lang beskrivelse av produktet"
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",

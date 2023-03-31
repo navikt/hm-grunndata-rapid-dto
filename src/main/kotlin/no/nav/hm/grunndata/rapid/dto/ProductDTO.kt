@@ -10,7 +10,7 @@ data class ProductDTO(
     val supplier: SupplierDTO,
     val title: String,
     val articleName: String,
-    val attributes: Map<AttributeNames, Any>,
+    val attributes: Attributes,
     val status: ProductStatus = ProductStatus.ACTIVE,
     val hmsArtNr: String?=null,
     val identifier: String,
@@ -69,22 +69,19 @@ enum class MediaType {
     OTHER
 }
 
-enum class AttributeNames(private val type: AttributeType) {
+data class Attributes(val manufacturer: String? = null,
+                      @Deprecated("use articleName in dto")
+                      val articlename: String? = null,
+                      val compatible: List<CompatibleAttribute>? = null,
+                      val tags: List<String>? = null,
+                      val series: String? = null,
+                      val shortdescription: String? = null,
+                      val text: String? = null,
+                      val url: String? = null,
+                      val bestillingsordning: Boolean? = null
+)
 
-    manufacturer(AttributeType.STRING),
-    @Deprecated("moved to articleName")
-    articlename(AttributeType.STRING),
-    compatible(AttributeType.LIST),
-    series(AttributeType.STRING),
-    keywords(AttributeType.LIST),
-    shortdescription(AttributeType.HTML),
-    text(AttributeType.HTML),
-    url(AttributeType.URL),
-    tags(AttributeType.LIST),
-    bestillingsordning(AttributeType.BOOLEAN)
 
-}
-
-enum class AttributeType {
-    STRING, HTML, URL, LIST, JSON, BOOLEAN
-}
+data class CompatibleAttribute(val id: UUID?=null,
+                               val supplierRef: String?=null,
+                               val hmsArtNr: String?)
