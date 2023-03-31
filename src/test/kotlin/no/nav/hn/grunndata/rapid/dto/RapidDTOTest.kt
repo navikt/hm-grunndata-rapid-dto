@@ -74,7 +74,7 @@ class RapidDTOTest() {
             createdBy = "REGISTER",
             updatedBy = "REGISTER"
         )
-        val registration = ProductRegistrationDTO(
+        val registration = ProductRegistrationRapidDTO(
             id = productDTO.id,
             draftStatus = DraftStatus.DRAFT,
             adminStatus = AdminStatus.PENDING,
@@ -98,7 +98,7 @@ class RapidDTOTest() {
     @Test
     fun registrationDTODeserializer() {
         val registrationDTO = objectMapper.readValue(RapidDTO::class.java.classLoader
-            .getResourceAsStream("registration.json"), ProductRegistrationDTO::class.java)
+            .getResourceAsStream("registration.json"), ProductRegistrationRapidDTO::class.java)
         registrationDTO.adminStatus shouldBe AdminStatus.PENDING
 
     }
