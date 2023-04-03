@@ -73,7 +73,7 @@ data class Attributes(val manufacturer: String? = null,
                       @Deprecated("use articleName in dto")
                       val articlename: String? = null,
                       val compatible: List<CompatibleAttribute>? = null,
-                      val tags: List<String>? = null,
+                      val keywords: List<String>? = null,
                       val series: String? = null,
                       val shortdescription: String? = null,
                       val text: String? = null,
