@@ -84,8 +84,6 @@ class RapidDTOTest() {
             createdByAdmin = false,
             expired = null,
             published = null,
-            updatedByUser = "email",
-            createdByUser = "email",
             productDTO = productDTO,
             version = 1,
             createdBy = "REGISTER",
