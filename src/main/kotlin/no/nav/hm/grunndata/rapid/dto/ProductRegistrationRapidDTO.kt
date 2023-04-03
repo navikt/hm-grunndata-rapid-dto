@@ -10,13 +10,10 @@ data class ProductRegistrationRapidDTO (
     val adminStatus: AdminStatus = AdminStatus.PENDING,
     val registrationStatus: RegistrationStatus = RegistrationStatus.ACTIVE,
     val message: String?,
-    val adminInfo: AdminInfo?=null,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val published: LocalDateTime?,
     val expired: LocalDateTime?,
-    val updatedByUser: String="system",
-    val createdByUser: String="system",
     val createdBy: String,
     val updatedBy: String,
     val createdByAdmin: Boolean = false,
@@ -25,7 +22,7 @@ data class ProductRegistrationRapidDTO (
 ) : RapidDTO
 
 enum class RegistrationStatus {
-    ACTIVE, DELETED
+    ACTIVE, INACTIVE, DELETED
 }
 
 enum class AdminStatus {
@@ -39,4 +36,3 @@ enum class DraftStatus {
     DRAFT, DONE
 }
 
-data class AdminInfo(val approvedBy: String?, val note: String?=null)

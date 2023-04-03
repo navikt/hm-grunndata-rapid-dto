@@ -81,7 +81,6 @@ class RapidDTOTest() {
             adminStatus = AdminStatus.PENDING,
             registrationStatus = RegistrationStatus.ACTIVE,
             message = "Melding til leverandør",
-            adminInfo = null,
             createdByAdmin = false,
             expired = null,
             published = null,
