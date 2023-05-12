@@ -49,7 +49,10 @@ data class AgreementInfo (
 )
 
 enum class ProductStatus {
-    ACTIVE, INACTIVE
+    ACTIVE,
+    @JsonEnumDefaultValue
+    INACTIVE,
+    DELETED
 }
 
 enum class MediaSourceType {
