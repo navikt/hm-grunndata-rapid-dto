@@ -3,12 +3,14 @@ package no.nav.hm.grunndata.rapid.dto
 import java.time.LocalDateTime
 import java.util.*
 
+
 data class AgreementDTO(
     override val id: UUID,
     val identifier: String,
     val title: String,
     val resume: String?,
     val text: String?,
+    val status: AgreementStatus = AgreementStatus.ACTIVE,
     val reference: String,
     val published: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = LocalDateTime.now(),
@@ -33,3 +35,7 @@ data class AgreementAttachment (
     val media: List<MediaInfo> = emptyList(),
     val description: String?,
 )
+
+enum class AgreementStatus {
+    ACTIVE, INACTIVE, DELETED
+}
