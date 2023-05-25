@@ -17,7 +17,7 @@ data class ProductRegistrationRapidDTO (
     val createdBy: String,
     val updatedBy: String,
     val createdByAdmin: Boolean = false,
-    val productDTO: ProductDTO,
+    val productDTO: ProductRapidDTO,
     val version: Long?=null
 ) : RapidDTO
 

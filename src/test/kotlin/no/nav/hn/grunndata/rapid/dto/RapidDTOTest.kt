@@ -39,7 +39,7 @@ class RapidDTOTest() {
 
     @Test
     fun registrationDTOSerializer() {
-        val productDTO = ProductDTO(
+        val productDTO = ProductRapidDTO(
             id = UUID.randomUUID(),
             supplier = supplier,
             title = "Dette er produkt 1",

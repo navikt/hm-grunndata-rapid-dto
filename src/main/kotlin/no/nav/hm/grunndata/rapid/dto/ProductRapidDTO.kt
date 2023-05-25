@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
 
-data class ProductDTO(
+data class ProductRapidDTO(
     override val id: UUID,
     val supplier: SupplierDTO,
     val title: String,
@@ -39,14 +39,14 @@ data class TechData (
 
 
 data class AgreementInfo (
-    val id: UUID ?= null,
+    val id: UUID,
     val identifier: String?=null,
     val rank: Int,
     val postNr: Int,
     val postIdentifier: String?=null,
     val postTitle: String?=null,
     val reference: String,
-    val expired: LocalDateTime?=null,
+    val expired: LocalDateTime,
 )
 
 enum class ProductStatus {

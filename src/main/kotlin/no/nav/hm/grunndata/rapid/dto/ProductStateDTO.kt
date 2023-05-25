@@ -8,7 +8,7 @@ data class ProductStateDTO(
     val transferId: UUID,
     val supplierId: UUID,
     val supplierRef: String,
-    val productDTO: ProductDTO,
+    val productDTO: ProductRapidDTO,
     val adminStatus: AdminStatus?=null,
     val adminMessage: String? = null,
     val created: LocalDateTime = LocalDateTime.now(),
