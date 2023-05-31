@@ -26,7 +26,8 @@ data class ProductRapidDTO(
     val published: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = updated.plusYears(20),
     val agreementInfo: AgreementInfo?=null,
-    val hasAgreement: Boolean = (agreementInfo!=null),
+    val agreements: List<AgreementInfo> = emptyList(),
+    val hasAgreement: Boolean = (agreementInfo!=null || agreements.isNotEmpty()),
     val createdBy: String,
     val updatedBy: String
 ) : RapidDTO
