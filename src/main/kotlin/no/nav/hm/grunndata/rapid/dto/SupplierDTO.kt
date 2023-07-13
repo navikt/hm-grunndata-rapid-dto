@@ -17,6 +17,9 @@ data class SupplierDTO(
 
 data class SupplierInfo (
     val address: String?=null,
+    val postNr: String?=null,
+    val postLocation: String?=null,
+    val countryCode: String?=null,
     val email: String?=null,
     val phone: String?=null,
     val homepage: String?=null
