@@ -12,6 +12,7 @@ class EventName {
         const val hmdbproductsyncV1 = "${RapidApp.grunndata_db}-hmdb-product-sync-v1" // send by db when sync from HMDB
         const val syncedRegisterProductV1  = "${RapidApp.grunndata_db}-register-product-synced-v1" // send by GDB when synced with register
         const val registeredProductV1 = "${RapidApp.grunndata_register}-registered-product-v1" // send by REGISTER when product change in register
+        const val registerAgreementV1 = "${RapidApp.grunndata_register}-registered-agreement-v1" // send by REGISTER when agreement change in register
         const val importedProductV1 = "${RapidApp.grunndata_import}-imported-product-v1" // send by IMPORT when product got imported
     }
 
