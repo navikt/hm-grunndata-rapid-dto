@@ -42,6 +42,7 @@ data class TechData (
 data class AgreementInfo (
     val id: UUID,
     val identifier: String?=null,
+    val title: String?=null,
     val rank: Int,
     val postNr: Int,
     val postIdentifier: String?=null,
