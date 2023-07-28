@@ -18,9 +18,21 @@ jobs:
         with:
           java-version: '17.x'
       - name: test and build
-        run: ./gradlew clean build
-      - name: publish
-        run: ./gradlew -Pversion="$(TZ="Europe/Oslo" date +'%Y%m%d%H%M')" clean build generateVersionProp publish
-        env:
-          ORG_GRADLE_PROJECT_githubUser: x-access-token
-          ORG_GRADLE_PROJECT_githubPassword: ${{ secrets.GITHUB_TOKEN }}
+        run: ./build.sh
+      - name: prepare release
+        run: ./prepare-release.sh
+#      - name: create release
+#        uses: ncipollo/release-action@v1
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          tag: ${{ env.VERSION_TAG }}
+#          name: ${{ env.APPLICATION }} ${{ env.VERSION_TAG }}
+#          body: ${{ env.CHANGE_LOG }}
+#          draft: false
+#          prerelease: false
+#      - name: publish
+#        run: ./gradlew -Pversion="$VERSION_TAG" clean build generateVersionProp publish
+#        env:
+#          ORG_GRADLE_PROJECT_githubUser: x-access-token
+#          ORG_GRADLE_PROJECT_githubPassword: ${{ secrets.GITHUB_TOKEN }}
