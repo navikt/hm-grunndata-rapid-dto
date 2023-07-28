@@ -21,6 +21,8 @@ jobs:
         run: ./build.sh
       - name: prepare release
         run: ./prepare-release.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #      - name: create release
 #        uses: ncipollo/release-action@v1
 #        env:
