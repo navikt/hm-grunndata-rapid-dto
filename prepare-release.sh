@@ -30,8 +30,7 @@ echo "Found latest release: $LATEST_RELEASE"
 GIT_TREE="[$VERSION_TAG](https://github.com/$GITHUB_REPOSITORY/tree/$VERSION_TAG)"
 COMPARE_LINK="[Full Changelog](https://github.com/$GITHUB_REPOSITORY/compare/$LATEST_RELEASE...$VERSION_TAG)"
 GIT_LOG=$(git log $LATEST_RELEASE..$VERSION_TAG --no-merges --pretty=format:"* %ad %s" -50 --date=short | sed "/^\\s*$/d")
-CHANGELOG="$GIT_TREE
-$COMPARE_LINK
-$GIT_LOG"
+echo "git log: $GIT_LOG"
+CHANGELOG="$GIT_TREE $COMPARE_LINK $GIT_LOG"
 echo "$CHANGELOG" >> "$GITHUB_ENV"
 echo "EOF" >> "$GITHUB_ENV"
