@@ -32,5 +32,6 @@ COMPARE_LINK="[Full Changelog](https://github.com/$GITHUB_REPOSITORY/compare/$LA
 GIT_LOG=$(git log $LATEST_RELEASE..$VERSION_TAG --no-merges --pretty=format:"* %ad %s" -50 --date=short | sed "/^\\s*$/d")
 echo "git log: $GIT_LOG"
 CHANGELOG="$GIT_TREE $COMPARE_LINK $GIT_LOG"
+echo "CHANGE_LOG<<EOF" >> "$GITHUB_ENV"
 echo "$CHANGELOG" >> "$GITHUB_ENV"
 echo "EOF" >> "$GITHUB_ENV"
