@@ -19,6 +19,7 @@ class EventName {
         const val importedProductV1 = "${RapidApp.grunndata_import}-product-imported-v1" // send by IMPORT when product got imported
         const val expiredAgreementV1 = "${RapidApp.grunndata_db}-agreement-expired-v1" // send by GDB when agreement has expired
         const val expiredProductAgreementV1 = "${RapidApp.grunndata_db}-product-agreement-expired-v1" // // send by GDB when product has an agreement that has expired
+        const val expiredProductV1 = "${RapidApp.grunndata_db}-product-expired-v1" // // send by GDB when product has expired
     }
 
 }
