@@ -1,5 +1,6 @@
 package no.nav.hm.grunndata.rapid.dto
 
+import java.time.LocalDateTime
 import java.util.*
 
 data class MediaRapidDTO (
@@ -19,5 +20,7 @@ data class MediaInfo (
     val priority: Int = -1,
     val type: MediaType = MediaType.IMAGE,
     val text:   String?=null,
-    val source: MediaSourceType = MediaSourceType.HMDB
+    val source: MediaSourceType = MediaSourceType.HMDB,
+    val updated: LocalDateTime = LocalDateTime.now(),
+    val created: LocalDateTime = LocalDateTime.now()
 )
