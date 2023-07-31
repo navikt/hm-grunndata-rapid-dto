@@ -22,5 +22,4 @@ data class MediaInfo (
     val text:   String?=null,
     val source: MediaSourceType = MediaSourceType.HMDB,
     val updated: LocalDateTime = LocalDateTime.now(),
-    val created: LocalDateTime = LocalDateTime.now()
 )
