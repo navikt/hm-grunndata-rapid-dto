@@ -1,0 +1,47 @@
+{
+  "id" : "b9d46097-cf32-4222-862f-aa420f783ac7",
+  "draftStatus" : "DONE",
+  "created" : "2023-07-31T08:07:47.996703",
+  "updated" : "2023-07-31T08:07:47.996707",
+  "published" : "2023-07-31T08:07:47.99671",
+  "expired" : "2025-07-31T08:07:47.996712",
+  "createdByUser" : "admin",
+  "updatedByUser" : "admin",
+  "createdBy" : "REGISTER",
+  "updatedBy" : "REGISTER",
+  "version" : 0,
+  "agreementDTO" : {
+    "id" : "b9d46097-cf32-4222-862f-aa420f783ac7",
+    "identifier" : "HMDB-123",
+    "title" : "Manuelle Rullestoler",
+    "resume" : "Kort Beskrivelse av avtalen",
+    "text" : "En lang beskrivelse av avtalen",
+    "status" : "ACTIVE",
+    "reference" : "1234-1",
+    "published" : "2023-07-31T08:07:47.996053",
+    "expired" : "2025-07-31T08:07:47.996069",
+    "attachments" : [ {
+      "title" : "Endringskatalog",
+      "media" : [ {
+        "sourceUri" : "123.pdf",
+        "uri" : "123.pdf",
+        "priority" : -1,
+        "type" : "IMAGE",
+        "text" : "Beskrivelse av dokumentet",
+        "source" : "HMDB"
+      } ],
+      "description" : "En beskrivelse"
+    } ],
+    "posts" : [ {
+      "identifier" : "HMDB-43",
+      "nr" : 1,
+      "title" : "post 1",
+      "description" : "Beskrivelse av post",
+      "created" : "2023-07-31T08:07:47.996603"
+    } ],
+    "createdBy" : "HMDB",
+    "updatedBy" : "HMDB",
+    "created" : "2023-07-31T08:07:47.996615",
+    "updated" : "2023-07-31T08:07:47.996618"
+  }
+}

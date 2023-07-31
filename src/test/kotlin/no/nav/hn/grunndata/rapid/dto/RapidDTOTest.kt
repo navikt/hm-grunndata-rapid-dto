@@ -13,11 +13,13 @@ import org.junit.jupiter.api.Test
 import java.awt.SystemColor.text
 import java.time.LocalDateTime
 import java.util.*
+import kotlin.reflect.jvm.internal.impl.descriptors.Visibilities.Local
 
 
 class RapidDTOTest() {
 
-    private val supplier = SupplierDTO(id = UUID.randomUUID(), identifier = "test-123", createdBy = "test", updatedBy = "test",
+    private val supplier = SupplierDTO(
+        id = UUID.randomUUID(), identifier = "test-123", createdBy = "test", updatedBy = "test",
         name = "testsupplier", info = SupplierInfo()
     )
 
@@ -44,9 +46,9 @@ class RapidDTOTest() {
             supplier = supplier,
             title = "Dette er produkt 1",
             articleName = "Dette er produkt 1 med og med",
-            attributes = Attributes (
+            attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
-                text =  "En lang beskrivelse av produktet"
+                text = "En lang beskrivelse av produktet"
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",
@@ -95,9 +97,76 @@ class RapidDTOTest() {
 
     @Test
     fun registrationDTODeserializer() {
-        val registrationDTO = objectMapper.readValue(RapidDTO::class.java.classLoader
-            .getResourceAsStream("registration.json"), ProductRegistrationRapidDTO::class.java)
+        val registrationDTO = objectMapper.readValue(
+            RapidDTO::class.java.classLoader
+                .getResourceAsStream("registration.json"), ProductRegistrationRapidDTO::class.java
+        )
         registrationDTO.adminStatus shouldBe AdminStatus.PENDING
+
+    }
+
+    @Test
+    fun agreementRegistrationDTOSerializer() {
+        val agreementDTO = AgreementDTO(
+            id = UUID.randomUUID(),
+            identifier = "HMDB-123",
+            title = "Manuelle Rullestoler",
+            resume = "Kort Beskrivelse av avtalen",
+            text = "En lang beskrivelse av avtalen",
+            status = AgreementStatus.ACTIVE,
+            reference = "1234-1",
+            published = LocalDateTime.now(),
+            expired = LocalDateTime.now().plusYears(2),
+            attachments = listOf(
+                AgreementAttachment(
+                    title = "Endringskatalog", description = "En beskrivelse", media = listOf(
+                        MediaInfo(
+                            source = MediaSourceType.HMDB,
+                            uri = "123.pdf",
+                            type = MediaType.IMAGE,
+                            sourceUri = "123.pdf",
+                            text = "Beskrivelse av dokumentet"
+                        )
+                    )
+                )
+            ),
+            posts = listOf(
+                AgreementPost(
+                    identifier = "HMDB-43",
+                    nr = 1,
+                    title = "post 1",
+                    description = "Beskrivelse av post"
+                )
+            ),
+            createdBy = "HMDB",
+            updatedBy = "HMDB",
+            created = LocalDateTime.now(),
+            updated = LocalDateTime.now()
+        )
+
+        val agreementRegistrationRapidDTO = AgreementRegistrationRapidDTO(
+            id = agreementDTO.id,
+            draftStatus = DraftStatus.DONE,
+            created = LocalDateTime.now(),
+            updated = LocalDateTime.now(),
+            createdByUser = "admin",
+            updatedByUser = "admin",
+            published = LocalDateTime.now(),
+            expired = LocalDateTime.now().plusYears(2),
+            createdBy = "REGISTER",
+            updatedBy = "REGISTER",
+            agreementDTO = agreementDTO
+        )
+        println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(agreementRegistrationRapidDTO))
+    }
+
+    @Test
+    fun agreementDTODeserializer() {
+        val agreementRegistrationRapidDTO = objectMapper.readValue(
+            RapidDTO::class.java.classLoader
+                .getResourceAsStream("agreementRegistration.json"), AgreementRegistrationRapidDTO::class.java
+        )
+        agreementRegistrationRapidDTO.agreementDTO.reference shouldBe "1234-1"
 
     }
 }
