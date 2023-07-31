@@ -34,6 +34,8 @@ data class AgreementAttachment (
     val title: String?,
     val media: List<MediaInfo> = emptyList(),
     val description: String?,
+    val updated: LocalDateTime = LocalDateTime.now(),
+    val created: LocalDateTime = LocalDateTime.now()
 )
 
 enum class AgreementStatus {
