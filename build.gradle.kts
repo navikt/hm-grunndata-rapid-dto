@@ -5,19 +5,18 @@ import java.io.FileOutputStream
 
 
 val jvmTarget = "17"
-val junitJupiterVersion = "5.9.0"
+val junitJupiterVersion = "5.9.2"
 val mockkVersion = "1.13.2"
-val kotestVersion = "5.5.0"
-val logbackClassicVersion = "1.4.5"
-val jacksonVersion = "2.14.1"
+val kotestVersion = "5.5.5"
+val logbackClassicVersion = "1.4.7"
+val jacksonVersion = "2.15.1"
 
 group = "no.nav.hm.grunndata"
 version = properties["version"] ?: "local-build"
 
 plugins {
-    kotlin("jvm") version "1.7.0"
-    kotlin("kapt") version "1.7.0"
-    kotlin("plugin.allopen") version "1.7.0"
+    kotlin("jvm") version "1.8.22"
+    kotlin("kapt") version "1.8.22"
     id("java")
     id("maven-publish")
 }
@@ -105,7 +104,7 @@ tasks.withType<Test> {
 }
 
 tasks.withType<Wrapper> {
-    gradleVersion = "7.5.1"
+    gradleVersion = "8.0.1"
 }
 
 
