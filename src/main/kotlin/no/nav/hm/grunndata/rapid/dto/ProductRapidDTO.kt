@@ -62,6 +62,7 @@ enum class MediaSourceType {
     HMDB,
     REGISTER,
     EXTERNALURL,
+    IMPORTAPI,
     @JsonEnumDefaultValue
     UNKNOWN
 }
