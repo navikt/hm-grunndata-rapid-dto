@@ -11,6 +11,11 @@ on:
       - main
 jobs:
   build-publish:
+    permissions:
+      contents: write
+      id-token: write
+      security-events: write
+      actions: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
