@@ -33,7 +33,11 @@
     "articleName" : "Dette er produkt 1 med og med",
     "attributes" : {
       "shortdescription" : "En kort beskrivelse av produktet",
-      "text" : "En lang beskrivelse av produktet"
+      "text" : "En lang beskrivelse av produktet",
+      "compatibleWidth": {
+        "ids": ["e2a84ea5-197d-471e-bf7e-361eede21583"],
+        "seriesIds":["e2a84ea5-197d-471e-bf7e-361eede21583"]
+      }
     },
     "status" : "ACTIVE",
     "hmsArtNr" : "111",
@@ -41,7 +45,7 @@
     "supplierRef" : "eksternref-111",
     "isoCategory" : "12001314",
     "accessory" : false,
-    "sparePart" : false,
+    "sparePart" : true,
     "seriesId" : "series-123",
     "techData" : [ {
       "key" : "maksvekt",

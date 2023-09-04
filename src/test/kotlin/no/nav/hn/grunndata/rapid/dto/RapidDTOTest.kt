@@ -48,14 +48,15 @@ class RapidDTOTest() {
             articleName = "Dette er produkt 1 med og med",
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
-                text = "En lang beskrivelse av produktet"
+                text = "En lang beskrivelse av produktet",
+                compatibleWidth = CompatibleWith(ids = listOf(UUID.randomUUID()), seriesIds = listOf(UUID.randomUUID().toString()) )
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",
             supplierRef = "eksternref-111",
             isoCategory = "12001314",
             accessory = false,
-            sparePart = false,
+            sparePart = true,
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
             media = listOf(

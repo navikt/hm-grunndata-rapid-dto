@@ -88,4 +88,4 @@ data class Attributes(val manufacturer: String? = null,
                       val hasTender: Boolean? = null,
 )
 
-data class CompatibleWith (val ids: List<UUID> = emptyList(), val seriesId: List<String> = emptyList())
+data class CompatibleWith (val ids: List<UUID> = emptyList(), val seriesIds: List<String> = emptyList())
