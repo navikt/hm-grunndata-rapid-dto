@@ -77,9 +77,7 @@ enum class MediaType {
 }
 
 data class Attributes(val manufacturer: String? = null,
-                      @Deprecated("use articleName in dto")
-                      val articlename: String? = null,
-                      val compatible: List<CompatibleAttribute>? = null,
+                      val compatibleWidth: CompatibleWith? = null,
                       val keywords: List<String>? = null,
                       val series: String? = null,
                       val shortdescription: String? = null,
@@ -90,7 +88,4 @@ data class Attributes(val manufacturer: String? = null,
                       val hasTender: Boolean? = null,
 )
 
-
-data class CompatibleAttribute(val id: UUID?=null,
-                               val supplierRef: String?=null,
-                               val hmsArtNr: String?)
+data class CompatibleWith (val ids: List<UUID> = emptyList(), val seriesId: List<String> = emptyList())
