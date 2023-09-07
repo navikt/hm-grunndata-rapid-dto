@@ -85,8 +85,7 @@ data class Attributes(val manufacturer: String? = null,
                       val url: String? = null,
                       val bestillingsordning: Boolean? = null,
                       val tenderId: String? = null,
-                      val hasTender: Boolean? = null,
-                      val importVersion: Long?=null
+                      val hasTender: Boolean? = null
 )
 
 
