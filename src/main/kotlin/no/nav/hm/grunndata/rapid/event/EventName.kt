@@ -7,9 +7,10 @@ package no.nav.hm.grunndata.rapid.event
 class EventName {
 
     companion object {
-        const val hmdbagreementsyncV1 = "${RapidApp.grunndata_db}-hmdb-agreement-sync-v1" // send by GDB when sync from HMDB
-        const val hmdbsuppliersyncV1 = "${RapidApp.grunndata_db}-hmdb-supplier-sync-v1" // send by GDB when sync from HMDB
-        const val hmdbproductsyncV1 = "${RapidApp.grunndata_db}-hmdb-product-sync-v1" // send by GDB when sync from HMDB
+        const val hmdbagreementsyncV1 = "${RapidApp.grunndata_db}-hmdb-agreement-sync-v1" // send agreement by GDB when sync from HMDB
+        const val hmdbsuppliersyncV1 = "${RapidApp.grunndata_db}-hmdb-supplier-sync-v1" // send supplier by GDB when sync from HMDB
+        const val hmdbproductsyncV1 = "${RapidApp.grunndata_db}-hmdb-product-sync-v1" // send product by GDB when sync from HMDB
+        const val hmdbseriessyncV1 = "${RapidApp.grunndata_db}-hmdb-series-sync-v1" // send series by GDB when sync from HMDB"
         const val syncedRegisterProductV1  = "${RapidApp.grunndata_db}-register-product-synced-v1" // send by GDB when synced product with register
         const val syncedRegisterAgreementV1  = "${RapidApp.grunndata_db}-register-agreement-synced-v1" // send by GDB when synced agreement with register
         const val syncedRegisterSupplierV1 = "${RapidApp.grunndata_db}-register-supplier-synced-v1" // send by GDB when synced supplier with register

@@ -5,14 +5,13 @@ import java.util.*
 
 data class SeriesImportRapidDTO(
     override val id: UUID,
-    val identifier: String,
-    val supplierId: UUID,
     val transferId: UUID,
-    val name: String,
     val message: String?=null,
-    val status: SeriesStatus = SeriesStatus.ACTIVE,
+    val seriesDTO: SeriesRapidDTO,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
+    val createdBy: String,
+    val updatedBy: String,
     val version: Long=0L
 ): RapidDTO
 
