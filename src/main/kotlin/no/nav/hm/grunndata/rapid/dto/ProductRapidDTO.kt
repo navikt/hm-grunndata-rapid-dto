@@ -19,6 +19,7 @@ data class ProductRapidDTO(
     val accessory: Boolean = false,
     val sparePart: Boolean = false,
     val seriesId: String? = id.toString(),
+    val seriesIdentifier: String? = null,
     val techData: List<TechData> = emptyList(),
     val media: List<MediaInfo> = emptyList(),
     val created: LocalDateTime = LocalDateTime.now(),
