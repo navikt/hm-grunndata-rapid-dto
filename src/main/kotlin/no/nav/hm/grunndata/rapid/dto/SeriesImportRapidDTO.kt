@@ -10,8 +10,6 @@ data class SeriesImportRapidDTO(
     val seriesDTO: SeriesRapidDTO,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
-    val createdBy: String,
-    val updatedBy: String,
     val version: Long=0L
 ): RapidDTO
 
