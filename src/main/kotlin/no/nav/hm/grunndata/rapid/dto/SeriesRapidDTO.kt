@@ -12,5 +12,6 @@ data class SeriesRapidDTO (
     val createdBy: String,
     val updatedBy: String,
     val created: LocalDateTime = LocalDateTime.now(),
-    val updated: LocalDateTime = LocalDateTime.now()
+    val updated: LocalDateTime = LocalDateTime.now(),
+    val expired: LocalDateTime = created.plusYears(15)
 ) : RapidDTO
