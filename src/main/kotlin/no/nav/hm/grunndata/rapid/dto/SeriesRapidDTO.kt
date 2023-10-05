@@ -15,3 +15,11 @@ data class SeriesRapidDTO (
     val updated: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = created.plusYears(15)
 ) : RapidDTO
+
+
+enum class SeriesStatus {
+    ACTIVE,
+    INACTIVE,
+    PENDING,
+    REJECTED
+}
