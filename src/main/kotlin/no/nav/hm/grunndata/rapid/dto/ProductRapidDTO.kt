@@ -91,4 +91,4 @@ data class Attributes(val manufacturer: String? = null,
 
 
 
-data class CompatibleWith (val seriesIds: List<UUID> = emptyList())
+data class CompatibleWith (val seriesIds: Set<UUID> = emptySet())

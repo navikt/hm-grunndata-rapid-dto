@@ -49,7 +49,7 @@ class RapidDTOTest() {
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = listOf(UUID.randomUUID()) )
+                compatibleWidth = CompatibleWith(seriesIds = setOf(UUID.randomUUID()) )
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",
