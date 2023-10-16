@@ -6,7 +6,7 @@ import java.util.*
 data class SeriesRapidDTO (
     override val id: UUID = UUID.randomUUID(),
     val status: SeriesStatus = SeriesStatus.ACTIVE,
-    val name: String,
+    val title: String,
     val supplierId: UUID,
     val identifier: String,
     val createdBy: String,
