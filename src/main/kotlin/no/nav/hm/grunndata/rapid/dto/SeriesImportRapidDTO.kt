@@ -12,5 +12,5 @@ data class SeriesImportRapidDTO(
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime,
-    val version: Long? = 0L
+    val version: Long
 ): RapidDTO
