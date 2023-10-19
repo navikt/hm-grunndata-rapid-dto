@@ -15,6 +15,7 @@ class EventName {
         const val syncedRegisterAgreementV1  = "${RapidApp.grunndata_db}-register-agreement-synced-v1" // send by GDB when synced agreement with register
         const val syncedRegisterSupplierV1 = "${RapidApp.grunndata_db}-register-supplier-synced-v1" // send by GDB when synced supplier with register
         const val registeredProductV1 = "${RapidApp.grunndata_register}-product-registered-v1" // send by REGISTER when product change in register
+        const val registeredSeriesV1 = "${RapidApp.grunndata_register}-series-registered-v1" // send by REGISTER when series change in register
         const val registeredAgreementV1 = "${RapidApp.grunndata_register}-agreement-registered-v1" // send by REGISTER when agreement change in register
         const val registeredSupplierV1 = "${RapidApp.grunndata_register}-supplier-registered-v1" // send by REGISTER when supplier change in register
         const val importedProductV1 = "${RapidApp.grunndata_import}-product-imported-v1" // send by IMPORT when product got imported
@@ -23,5 +24,4 @@ class EventName {
         const val expiredProductAgreementV1 = "${RapidApp.grunndata_db}-product-agreement-expired-v1" // // send by GDB when product has an agreement that has expired
         const val expiredProductV1 = "${RapidApp.grunndata_db}-product-expired-v1" // // send by GDB when product has expired
     }
-
 }
