@@ -14,6 +14,7 @@ class EventName {
         const val syncedRegisterProductV1  = "${RapidApp.grunndata_db}-register-product-synced-v1" // send by GDB when synced product with register
         const val syncedRegisterAgreementV1  = "${RapidApp.grunndata_db}-register-agreement-synced-v1" // send by GDB when synced agreement with register
         const val syncedRegisterSupplierV1 = "${RapidApp.grunndata_db}-register-supplier-synced-v1" // send by GDB when synced supplier with register
+        const val syncedRegisterSeriesV1 = "${RapidApp.grunndata_db}-register-series-synced-v1" // send by GDB when synced series with register
         const val registeredProductV1 = "${RapidApp.grunndata_register}-product-registered-v1" // send by REGISTER when product change in register
         const val registeredSeriesV1 = "${RapidApp.grunndata_register}-series-registered-v1" // send by REGISTER when series change in register
         const val registeredAgreementV1 = "${RapidApp.grunndata_register}-agreement-registered-v1" // send by REGISTER when agreement change in register
