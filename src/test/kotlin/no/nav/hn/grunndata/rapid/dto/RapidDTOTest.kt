@@ -118,6 +118,7 @@ class RapidDTOTest() {
             reference = "1234-1",
             published = LocalDateTime.now(),
             expired = LocalDateTime.now().plusYears(2),
+            isoCategory = "12001314",
             attachments = listOf(
                 AgreementAttachment(
                     title = "Endringskatalog", description = "En beskrivelse", media = listOf(
