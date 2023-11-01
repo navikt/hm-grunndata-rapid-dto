@@ -16,7 +16,7 @@ data class AgreementDTO(
     val expired: LocalDateTime = LocalDateTime.now(),
     val attachments: List<AgreementAttachment> = emptyList(),
     val posts: List<AgreementPost> = emptyList(),
-    val isoCategory: String,
+    val isoCategory: List<String> = emptyList(),
     val createdBy:String,
     val updatedBy: String,
     val created: LocalDateTime = LocalDateTime.now(),

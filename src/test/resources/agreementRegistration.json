@@ -20,7 +20,7 @@
     "reference" : "1234-1",
     "published" : "2023-07-31T08:07:47.996053",
     "expired" : "2025-07-31T08:07:47.996069",
-    "isoCategory" : "12001314",
+    "isoCategory" : ["12001314"],
     "attachments" : [ {
       "title" : "Endringskatalog",
       "media" : [ {
