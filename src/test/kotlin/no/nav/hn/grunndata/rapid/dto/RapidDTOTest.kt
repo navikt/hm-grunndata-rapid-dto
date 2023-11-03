@@ -59,7 +59,7 @@ class RapidDTOTest() {
             sparePart = true,
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
-            media = listOf(
+            media = setOf(
                 MediaInfo(
                     uri = "123.jpg",
                     text = "bilde av produktet",

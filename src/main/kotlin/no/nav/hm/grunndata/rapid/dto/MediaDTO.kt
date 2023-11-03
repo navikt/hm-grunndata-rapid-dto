@@ -12,7 +12,17 @@ data class MediaRapidDTO (
     val type: MediaType = MediaType.IMAGE,
     val text:   String?=null,
     val source: MediaSourceType = MediaSourceType.HMDB
-):RapidDTO
+):RapidDTO {
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is MediaRapidDTO) return false
+        return uri == other.uri
+    }
+
+    override fun hashCode(): Int {
+        return uri.hashCode()
+    }
+}
 
 data class MediaInfo (
     val sourceUri: String,
@@ -22,4 +32,15 @@ data class MediaInfo (
     val text:   String?=null,
     val source: MediaSourceType = MediaSourceType.HMDB,
     val updated: LocalDateTime = LocalDateTime.now(),
-)
+) {
+    override fun hashCode(): Int {
+        return uri.hashCode()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is MediaInfo) return false
+        return uri == other.uri
+    }
+
+}

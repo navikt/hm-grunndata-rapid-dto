@@ -21,7 +21,7 @@ data class ProductRapidDTO(
     val seriesId: String? = id.toString(),
     val seriesIdentifier: String? = null,
     val techData: List<TechData> = emptyList(),
-    val media: List<MediaInfo> = emptyList(),
+    val media: Set<MediaInfo> = emptySet(),
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val published: LocalDateTime = LocalDateTime.now(),
