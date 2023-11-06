@@ -9,6 +9,7 @@ data class SeriesRegistrationRapidDTO(
     val supplierId:UUID,
     val identifier: String,
     val title: String,
+    val text: String,
     val status: SeriesStatus = SeriesStatus.ACTIVE,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),

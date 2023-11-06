@@ -59,7 +59,7 @@ class RapidDTOTest() {
             sparePart = true,
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
-            media = setOf(
+            media = setOf (
                 MediaInfo(
                     uri = "123.jpg",
                     text = "bilde av produktet",
@@ -170,5 +170,15 @@ class RapidDTOTest() {
         )
         agreementRegistrationRapidDTO.agreementDTO.reference shouldBe "1234-1"
 
+    }
+
+    @Test
+    fun seriesDTODeserializer() {
+            val seriesRapidDTO = objectMapper.readValue(
+                RapidDTO::class.java.classLoader
+                .getResourceAsStream("series.json"), SeriesRapidDTO::class.java
+        )
+        seriesRapidDTO.title shouldBe "Dette er en serie"
+        seriesRapidDTO.text shouldBe "en beskrivelse"
     }
 }
