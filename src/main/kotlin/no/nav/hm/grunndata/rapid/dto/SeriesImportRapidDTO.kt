@@ -9,6 +9,7 @@ data class SeriesImportRapidDTO(
     val transferId: UUID,
     val title: String,
     val text: String,
+    val isoCategory: String,
     val status: SeriesStatus = SeriesStatus.ACTIVE,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),

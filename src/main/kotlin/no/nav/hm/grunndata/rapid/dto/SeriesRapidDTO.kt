@@ -8,6 +8,7 @@ data class SeriesRapidDTO (
     val status: SeriesStatus = SeriesStatus.ACTIVE,
     val title: String,
     val text: String,
+    val isoCategory: String,
     val supplierId: UUID,
     val identifier: String,
     val createdBy: String,
