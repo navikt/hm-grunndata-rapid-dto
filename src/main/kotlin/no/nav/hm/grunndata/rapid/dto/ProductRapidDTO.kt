@@ -18,6 +18,8 @@ data class ProductRapidDTO(
     val isoCategory: String,
     val accessory: Boolean = false,
     val sparePart: Boolean = false,
+    val seriesUUID: UUID? = null,
+    @Deprecated("Use seriesUUID instead")
     val seriesId: String? = id.toString(),
     val seriesIdentifier: String? = null,
     val techData: List<TechData> = emptyList(),

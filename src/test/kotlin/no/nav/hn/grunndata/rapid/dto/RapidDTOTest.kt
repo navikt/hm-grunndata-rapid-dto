@@ -57,6 +57,7 @@ class RapidDTOTest() {
             isoCategory = "12001314",
             accessory = false,
             sparePart = true,
+            seriesUUID = UUID.randomUUID(),
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
             media = setOf (
