@@ -3,6 +3,8 @@ package no.nav.hm.grunndata.rapid.dto
 import java.time.LocalDateTime
 import java.util.*
 
+
+// sent by hm-grunndata-media
 data class MediaRapidDTO (
     override val id: UUID,
     val oid: UUID,
@@ -24,8 +26,10 @@ data class MediaRapidDTO (
     }
 }
 
+// used part of product dto
 data class MediaInfo (
     val sourceUri: String,
+    val filename: String?=null,
     val uri:    String,
     val priority: Int = -1,
     val type: MediaType = MediaType.IMAGE,
