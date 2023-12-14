@@ -182,4 +182,35 @@ class RapidDTOTest() {
         seriesRapidDTO.title shouldBe "Dette er en serie"
         seriesRapidDTO.text shouldBe "en beskrivelse"
     }
+
+    @Test
+    fun productAgreementDTOSerializer() {
+        val productAgreementRapidDTO = ProductAgreementRegistrationRapidDTO(
+            id = UUID.randomUUID(),
+            productId = UUID.randomUUID(),
+            title = "beskrivelse av produktet",
+            supplierId = UUID.randomUUID(),
+            supplierRef = "eksternref-1",
+            hmsArtNr = "111",
+            agreementId = UUID.randomUUID(),
+            reference = "AV-142",
+            post = 1,
+            rank = 1,
+            status = ProductAgreementStatus.ACTIVE,
+            createdBy = "REGISTER",
+            created = LocalDateTime.now(),
+            updated = LocalDateTime.now(),
+            published = LocalDateTime.now(),
+            expired = LocalDateTime.now().plusYears(4))
+          println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(productAgreementRapidDTO))
+    }
+
+    @Test
+    fun productAgreementDTODeserializer() {
+        val productAgreementRapidDTO = objectMapper.readValue(
+            RapidDTO::class.java.classLoader
+                .getResourceAsStream("productAgreementRegistration.json"), ProductAgreementRegistrationRapidDTO::class.java
+        )
+        productAgreementRapidDTO.title shouldBe "beskrivelse av produktet"
+    }
 }

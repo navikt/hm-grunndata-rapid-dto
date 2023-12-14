@@ -1,0 +1,18 @@
+{
+  "id" : "1029df7c-7341-4070-905f-678097535551",
+  "productId" : "fa637b58-4a26-44ac-b526-0ba365f0251b",
+  "title" : "beskrivelse av produktet",
+  "supplierId" : "dfd1cc66-2f99-488b-aa67-368cf6af31cf",
+  "supplierRef" : "eksternref-1",
+  "hmsArtNr" : "111",
+  "agreementId" : "818a6304-c796-4c97-96a1-2044485a2aa8",
+  "reference" : "AV-142",
+  "post" : 1,
+  "rank" : 1,
+  "status" : "ACTIVE",
+  "createdBy" : "REGISTER",
+  "created" : "2023-12-14T10:49:07.12425",
+  "updated" : "2023-12-14T10:49:07.124266",
+  "published" : "2023-12-14T10:49:07.124269",
+  "expired" : "2027-12-14T10:49:07.124272"
+}
