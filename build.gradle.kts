@@ -8,7 +8,7 @@ val jvmTarget = "17"
 val junitJupiterVersion = "5.9.2"
 val mockkVersion = "1.13.2"
 val kotestVersion = "5.5.5"
-val logbackClassicVersion = "1.4.7"
+val logbackClassicVersion = "1.4.12"
 val jacksonVersion = "2.15.1"
 
 group = "no.nav.hm.grunndata"

@@ -11,7 +11,7 @@ data class IsoCategoryDTO(
     val isoCode: String,
     val isoTitle: String,
     val isoText: String,
-    val isoTextShort: String,
+    val isoTextShort: String?=null,
     val isoTranslations: IsoTranslationsDTO?=null,
     val isoLevel: Int,
     val isActive: Boolean = true,
