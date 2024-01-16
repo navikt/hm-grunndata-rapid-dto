@@ -1,6 +1,5 @@
 package no.nav.hm.grunndata.rapid.dto
 
-
 import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
@@ -42,7 +41,6 @@ data class TechData (
     val unit:   String
 )
 
-
 data class AgreementInfo (
     val id: UUID,
     val identifier: String?=null,
@@ -81,18 +79,27 @@ enum class MediaType {
     OTHER
 }
 
-data class Attributes(val manufacturer: String? = null,
-                      val compatibleWidth: CompatibleWith? = null,
-                      val keywords: List<String>? = null,
-                      val series: String? = null,
-                      val shortdescription: String? = null,
-                      val text: String? = null,
-                      val url: String? = null,
-                      val bestillingsordning: Boolean? = null,
-                      val tenderId: String? = null,
-                      val hasTender: Boolean? = null
+enum class Produkttype {
+    Hovedprodukt,
+    Tilbehoer,
+    Del,
+}
+
+data class Attributes(
+    val manufacturer: String? = null,
+    val compatibleWidth: CompatibleWith? = null,
+    val keywords: List<String>? = null,
+    val series: String? = null,
+    val shortdescription: String? = null,
+    val text: String? = null,
+    val url: String? = null,
+    val bestillingsordning: Boolean? = null,
+    val digitalSoknad: Boolean? = null,
+    val ikkeTilInstitusjon: Boolean? = null,
+    val pakrevdGodkjenningskurs: Boolean? = null,
+    val produkttype: Produkttype? = null,
+    val tenderId: String? = null,
+    val hasTender: Boolean? = null,
 )
-
-
 
 data class CompatibleWith (val seriesIds: Set<UUID> = emptySet())
