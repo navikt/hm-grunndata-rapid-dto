@@ -85,6 +85,12 @@ enum class Produkttype {
     Del,
 }
 
+data class PakrevdGodkjenningskurs (
+    val tittel: String,
+    val isokode: String,
+    val kursId: Int,
+)
+
 data class Attributes(
     val manufacturer: String? = null,
     val compatibleWidth: CompatibleWith? = null,
@@ -96,7 +102,7 @@ data class Attributes(
     val bestillingsordning: Boolean? = null,
     val digitalSoknad: Boolean? = null,
     val ikkeTilInstitusjon: Boolean? = null,
-    val pakrevdGodkjenningskurs: Boolean? = null,
+    val pakrevdGodkjenningskurs: PakrevdGodkjenningskurs? = null,
     val produkttype: Produkttype? = null,
     val tenderId: String? = null,
     val hasTender: Boolean? = null,
