@@ -22,6 +22,7 @@
     "expired" : "2025-07-31T08:07:47.996069",
     "isoCategory" : ["12001314"],
     "attachments" : [ {
+      "id": "b9d46097-cf32-4222-862f-aa420f783ac7",
       "title" : "Endringskatalog",
       "media" : [ {
         "sourceUri" : "123.pdf",
