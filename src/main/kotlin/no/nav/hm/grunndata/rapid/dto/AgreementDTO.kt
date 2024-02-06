@@ -1,7 +1,7 @@
 package no.nav.hm.grunndata.rapid.dto
 
 import java.time.LocalDateTime
-import java.util.*
+import java.util.UUID
 
 
 data class AgreementDTO(
@@ -17,13 +17,13 @@ data class AgreementDTO(
     val attachments: List<AgreementAttachment> = emptyList(),
     val posts: List<AgreementPost> = emptyList(),
     val isoCategory: List<String> = emptyList(),
-    val createdBy:String,
+    val createdBy: String,
     val updatedBy: String,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now()
-): RapidDTO
+) : RapidDTO
 
-data class AgreementPost (
+data class AgreementPost(
     val identifier: String,
     val nr: Int,
     val title: String,
@@ -31,7 +31,8 @@ data class AgreementPost (
     val created: LocalDateTime = LocalDateTime.now()
 )
 
-data class AgreementAttachment (
+data class AgreementAttachment(
+    val id: UUID,
     val title: String?,
     val media: List<MediaInfo> = emptyList(),
     val description: String?

@@ -8,12 +8,33 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.kotlinModule
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.*
+import no.nav.hm.grunndata.rapid.dto.AdminStatus
+import no.nav.hm.grunndata.rapid.dto.AgreementAttachment
+import no.nav.hm.grunndata.rapid.dto.AgreementDTO
+import no.nav.hm.grunndata.rapid.dto.AgreementInfo
+import no.nav.hm.grunndata.rapid.dto.AgreementPost
+import no.nav.hm.grunndata.rapid.dto.AgreementRegistrationRapidDTO
+import no.nav.hm.grunndata.rapid.dto.AgreementStatus
+import no.nav.hm.grunndata.rapid.dto.Attributes
+import no.nav.hm.grunndata.rapid.dto.CompatibleWith
+import no.nav.hm.grunndata.rapid.dto.DraftStatus
+import no.nav.hm.grunndata.rapid.dto.MediaInfo
+import no.nav.hm.grunndata.rapid.dto.MediaSourceType
+import no.nav.hm.grunndata.rapid.dto.MediaType
+import no.nav.hm.grunndata.rapid.dto.ProductAgreementRegistrationRapidDTO
+import no.nav.hm.grunndata.rapid.dto.ProductAgreementStatus
+import no.nav.hm.grunndata.rapid.dto.ProductRapidDTO
+import no.nav.hm.grunndata.rapid.dto.ProductRegistrationRapidDTO
+import no.nav.hm.grunndata.rapid.dto.RapidDTO
+import no.nav.hm.grunndata.rapid.dto.RegistrationStatus
+import no.nav.hm.grunndata.rapid.dto.SeriesRapidDTO
+import no.nav.hm.grunndata.rapid.dto.SupplierDTO
+import no.nav.hm.grunndata.rapid.dto.SupplierInfo
+import no.nav.hm.grunndata.rapid.dto.TechData
+import no.nav.hm.grunndata.rapid.dto.rapidDTOVersion
 import org.junit.jupiter.api.Test
-import java.awt.SystemColor.text
 import java.time.LocalDateTime
-import java.util.*
-import kotlin.reflect.jvm.internal.impl.descriptors.Visibilities.Local
+import java.util.UUID
 
 
 class RapidDTOTest() {
@@ -49,7 +70,7 @@ class RapidDTOTest() {
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = setOf(UUID.randomUUID()) )
+                compatibleWidth = CompatibleWith(seriesIds = setOf(UUID.randomUUID()))
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",
@@ -60,7 +81,7 @@ class RapidDTOTest() {
             seriesUUID = UUID.randomUUID(),
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
-            media = setOf (
+            media = setOf(
                 MediaInfo(
                     uri = "123.jpg",
                     text = "bilde av produktet",
@@ -122,6 +143,7 @@ class RapidDTOTest() {
             isoCategory = listOf("12001314"),
             attachments = listOf(
                 AgreementAttachment(
+                    id = UUID.randomUUID(),
                     title = "Endringskatalog", description = "En beskrivelse", media = listOf(
                         MediaInfo(
                             source = MediaSourceType.HMDB,
@@ -175,8 +197,8 @@ class RapidDTOTest() {
 
     @Test
     fun seriesDTODeserializer() {
-            val seriesRapidDTO = objectMapper.readValue(
-                RapidDTO::class.java.classLoader
+        val seriesRapidDTO = objectMapper.readValue(
+            RapidDTO::class.java.classLoader
                 .getResourceAsStream("series.json"), SeriesRapidDTO::class.java
         )
         seriesRapidDTO.title shouldBe "Dette er en serie"
@@ -201,15 +223,17 @@ class RapidDTOTest() {
             created = LocalDateTime.now(),
             updated = LocalDateTime.now(),
             published = LocalDateTime.now(),
-            expired = LocalDateTime.now().plusYears(4))
-          println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(productAgreementRapidDTO))
+            expired = LocalDateTime.now().plusYears(4)
+        )
+        println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(productAgreementRapidDTO))
     }
 
     @Test
     fun productAgreementDTODeserializer() {
         val productAgreementRapidDTO = objectMapper.readValue(
             RapidDTO::class.java.classLoader
-                .getResourceAsStream("productAgreementRegistration.json"), ProductAgreementRegistrationRapidDTO::class.java
+                .getResourceAsStream("productAgreementRegistration.json"),
+            ProductAgreementRegistrationRapidDTO::class.java
         )
         productAgreementRapidDTO.title shouldBe "beskrivelse av produktet"
     }
