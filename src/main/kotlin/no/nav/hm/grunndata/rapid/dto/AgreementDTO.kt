@@ -32,7 +32,7 @@ data class AgreementPost(
 )
 
 data class AgreementAttachment(
-    val id: UUID,
+    val id: UUID?,
     val title: String?,
     val media: List<MediaInfo> = emptyList(),
     val description: String?
