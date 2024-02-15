@@ -23,8 +23,8 @@ class EventName {
         const val registeredAgreementV1 = "${RapidApp.grunndata_register}-agreement-registered-v1" // send by REGISTER when agreement change in register
         const val registeredSupplierV1 = "${RapidApp.grunndata_register}-supplier-registered-v1" // send by REGISTER when supplier change in register
         const val registeredBestillingsordningV1 = "${RapidApp.grunndata_register}-bestillingsordning-registered-v1" // send by REGISTER when bestillingsordning change in register
+        const val registeredNewsV1 = "${RapidApp.grunndata_register}-news-registered-v1" // send by REGISTER when news change in register
         const val importedProductV1 = "${RapidApp.grunndata_import}-product-imported-v1" // send by IMPORT when product got imported
-        const val importedSeriesV1 = "${RapidApp.grunndata_import}-series-imported-v1" // send by IMPORT when series got imported
-
+        const val importedSeriesV1 = "${RapidApp.grunndata_import}-series-imported-v1" // send by IMPORT when series got importeed
     }
 }
