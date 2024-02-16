@@ -20,6 +20,7 @@ data class NewsRegistrationRapidDTO(
 
 data class NewsDTO(
     val id: UUID,
+    val identifier: String,
     val title: String,
     val text: String,
     val status: NewsStatus,
