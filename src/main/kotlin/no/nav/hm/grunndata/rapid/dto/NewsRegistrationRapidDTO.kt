@@ -18,6 +18,21 @@ data class NewsRegistrationRapidDTO(
     val updatedByUser: String
 ): RapidDTO
 
+data class NewsDTO(
+    val id: UUID,
+    val title: String,
+    val text: String,
+    val status: NewsStatus,
+    val published: LocalDateTime,
+    val expired: LocalDateTime,
+    val created: LocalDateTime,
+    val updated: LocalDateTime,
+    val createdBy: String,
+    val updatedBy: String,
+    val author: String,
+)
+
+
 enum class NewsStatus {
     ACTIVE, INACTIVE, DELETED
 }
