@@ -19,7 +19,7 @@ data class NewsRegistrationRapidDTO(
 ): RapidDTO
 
 data class NewsDTO(
-    val id: UUID,
+    override val id: UUID,
     val identifier: String,
     val title: String,
     val text: String,
@@ -31,7 +31,7 @@ data class NewsDTO(
     val createdBy: String,
     val updatedBy: String,
     val author: String,
-)
+): RapidDTO
 
 
 enum class NewsStatus {

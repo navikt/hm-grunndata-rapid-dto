@@ -11,6 +11,7 @@ class EventName {
         const val hmdbsuppliersyncV1 = "${RapidApp.grunndata_db}-hmdb-supplier-sync-v1" // send supplier by GDB when sync from HMDB
         const val hmdbproductsyncV1 = "${RapidApp.grunndata_db}-hmdb-product-sync-v1" // send product by GDB when sync from HMDB
         const val hmdbseriessyncV1 = "${RapidApp.grunndata_db}-hmdb-series-sync-v1" // send series by GDB when sync from HMDB"
+        const val hmdbnewsyncV1 = "${RapidApp.grunndata_db}-hmdb-news-sync-v1" // send news by GDB when sync from HMDB
         const val expiredAgreementV1 = "${RapidApp.grunndata_db}-agreement-expired-v1" // send by GDB when agreement has expired
         const val expiredProductV1 = "${RapidApp.grunndata_db}-product-expired-v1" // // send by GDB when product has expired
         const val syncedRegisterProductV1  = "${RapidApp.grunndata_db}-register-product-synced-v1" // send by GDB when synced product with register
