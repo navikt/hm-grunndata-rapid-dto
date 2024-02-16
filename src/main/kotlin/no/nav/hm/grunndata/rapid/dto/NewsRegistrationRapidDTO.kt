@@ -14,6 +14,8 @@ data class NewsRegistrationRapidDTO(
     val created: LocalDateTime,
     val updated: LocalDateTime,
     val author: String,
+    val createdBy: String,
+    val updatedBy: String,
     val createdByUser: String,
     val updatedByUser: String
 ): RapidDTO
