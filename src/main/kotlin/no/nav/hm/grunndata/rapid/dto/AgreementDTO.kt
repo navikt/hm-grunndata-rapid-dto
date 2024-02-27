@@ -25,7 +25,9 @@ data class AgreementDTO(
 
 data class AgreementPost(
     val identifier: String,
+    val id: UUID?=null,
     val nr: Int,
+    val refNr: String? = null,
     val title: String,
     val description: String,
     val created: LocalDateTime = LocalDateTime.now()

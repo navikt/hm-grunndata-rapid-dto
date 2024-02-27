@@ -49,6 +49,8 @@ data class AgreementInfo (
     val postNr: Int,
     val postIdentifier: String?=null,
     val postTitle: String?=null,
+    val postId: UUID?=null,
+    val refNr: String?=null,
     val reference: String,
     val expired: LocalDateTime,
     val published: LocalDateTime?=null,
