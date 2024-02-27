@@ -25,7 +25,7 @@ data class AgreementDTO(
 
 data class AgreementPost(
     val identifier: String,
-    val id: UUID?=null,
+    val id: UUID? = UUID.randomUUID(),
     val nr: Int,
     val refNr: String? = null,
     val title: String,
