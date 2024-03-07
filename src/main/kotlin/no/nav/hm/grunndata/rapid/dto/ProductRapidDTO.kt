@@ -103,6 +103,7 @@ data class Attributes(
     val url: String? = null,
     val bestillingsordning: Boolean? = null,
     val digitalSoknad: Boolean? = null,
+    val sortimentKategori: String? = null,
     val pakrevdGodkjenningskurs: PakrevdGodkjenningskurs? = null,
     val produkttype: Produkttype? = null,
     val tenderId: String? = null,
