@@ -13,6 +13,7 @@ class ProductAgreementRegistrationRapidDTO(
     val agreementId: UUID,
     val reference: String,
     val post: Int,
+    val postId: UUID?=null,
     val rank: Int,
     val status: ProductAgreementStatus,
     val createdBy: String,
