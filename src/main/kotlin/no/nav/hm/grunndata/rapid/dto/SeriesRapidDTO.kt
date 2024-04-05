@@ -1,5 +1,6 @@
 package no.nav.hm.grunndata.rapid.dto
 
+import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
 
@@ -21,7 +22,7 @@ data class SeriesRapidDTO (
 
 enum class SeriesStatus {
     ACTIVE,
+    @JsonEnumDefaultValue
     INACTIVE,
-    PENDING,
-    REJECTED
+    DELETED,
 }
