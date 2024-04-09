@@ -95,7 +95,8 @@ class RapidDTOTest() {
                 rank = 1,
                 postNr = 1,
                 reference = "AV-142",
-                expired = LocalDateTime.now()
+                expired = LocalDateTime.now(),
+                status = ProductAgreementStatus.ACTIVE
             ),
             createdBy = "REGISTER",
             updatedBy = "REGISTER"
