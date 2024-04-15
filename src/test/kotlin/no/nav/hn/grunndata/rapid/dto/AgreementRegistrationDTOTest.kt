@@ -11,7 +11,6 @@ import no.nav.hm.grunndata.rapid.dto.DraftStatus
 import no.nav.hm.grunndata.rapid.dto.MediaInfo
 import no.nav.hm.grunndata.rapid.dto.MediaSourceType
 import no.nav.hm.grunndata.rapid.dto.MediaType
-import no.nav.hm.grunndata.rapid.dto.ProductRegistrationRapidDTO
 import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime
@@ -21,54 +20,58 @@ class AgreementRegistrationDTOTest {
 
     @Test
     fun testAgreementRegistrationDTO() {
+        val uuid = UUID.fromString("636c264b-b974-43b6-b823-a11b9f532b97")
         val agreementDTO = AgreementDTO(
-            id = UUID.randomUUID(),
+            id = uuid,
             identifier = "HMDB-123",
             title = "Manuelle Rullestoler",
             resume = "Kort Beskrivelse av avtalen",
             text = "En lang beskrivelse av avtalen",
             status = AgreementStatus.ACTIVE,
             reference = "1234-1",
-            published = LocalDateTime.now(),
-            expired = LocalDateTime.now().plusYears(2),
+            published = LocalDateTime.MAX,
+            expired = LocalDateTime.MAX,
             isoCategory = listOf("12001314"),
             attachments = listOf(
                 AgreementAttachment(
-                    id = UUID.randomUUID(),
+                    id = uuid,
                     title = "Endringskatalog", description = "En beskrivelse", media = listOf(
                         MediaInfo(
                             source = MediaSourceType.HMDB,
                             uri = "123.pdf",
                             type = MediaType.IMAGE,
                             sourceUri = "123.pdf",
-                            text = "Beskrivelse av dokumentet"
+                            text = "Beskrivelse av dokumentet",
+                            updated = LocalDateTime.MAX
                         )
                     )
                 )
             ),
             posts = listOf(
                 AgreementPost(
+                    id = uuid,
                     identifier = "HMDB-43",
                     nr = 1,
                     title = "post 1",
-                    description = "Beskrivelse av post"
+                    description = "Beskrivelse av post",
+                    created = LocalDateTime.MAX
                 )
             ),
             createdBy = "HMDB",
             updatedBy = "HMDB",
-            created = LocalDateTime.now(),
-            updated = LocalDateTime.now()
+            created = LocalDateTime.MAX,
+            updated = LocalDateTime.MAX
         )
 
         val agreementRegistrationRapidDTO = AgreementRegistrationRapidDTO(
-            id = agreementDTO.id,
+            id = uuid,
             draftStatus = DraftStatus.DONE,
-            created = LocalDateTime.now(),
-            updated = LocalDateTime.now(),
+            created = LocalDateTime.MAX,
+            updated = LocalDateTime.MAX,
             createdByUser = "admin",
             updatedByUser = "admin",
-            published = LocalDateTime.now(),
-            expired = LocalDateTime.now().plusYears(2),
+            published = LocalDateTime.MAX,
+            expired = LocalDateTime.MAX,
             createdBy = "REGISTER",
             updatedBy = "REGISTER",
             agreementDTO = agreementDTO

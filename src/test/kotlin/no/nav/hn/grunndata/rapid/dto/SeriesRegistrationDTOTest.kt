@@ -45,7 +45,8 @@ class SeriesRegistrationDTOTest {
                         uri = "123.jog",
                         text = "bilde av serien",
                         source = MediaSourceType.REGISTER,
-                        sourceUri = "https://localhost/123.jpg"
+                        sourceUri = "https://localhost/123.jpg",
+                        updated = LocalDateTime.MAX
                     )
                 )
             )
