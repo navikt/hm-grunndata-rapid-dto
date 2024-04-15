@@ -1,21 +1,21 @@
 {
-  "id" : "9fe67a1d-abe0-4737-ade0-5de61bc4e61e",
+  "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
   "supplier" : {
-    "id" : "623ed209-6f17-46b5-9a6f-1dea82b58a4c",
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
     "identifier" : "test-123",
     "status" : "ACTIVE",
     "name" : "testsupplier",
     "info" : { },
     "createdBy" : "test",
     "updatedBy" : "test",
-    "created" : "2024-04-15T09:38:07.221142",
-    "updated" : "2024-04-15T09:38:07.221153"
+    "created" : "+999999999-12-31T23:59:59.999999999",
+    "updated" : "+999999999-12-31T23:59:59.999999999"
   },
   "title" : "Dette er produkt 1",
   "articleName" : "Dette er produkt 1 med og med",
   "attributes" : {
     "compatibleWidth" : {
-      "seriesIds" : [ "736a25f4-4ac5-4562-bc4a-89327d351de9" ]
+      "seriesIds" : [ "0d527ba0-d71e-4df5-8b1c-62e6f297e51e" ]
     },
     "shortdescription" : "En kort beskrivelse av produktet",
     "text" : "En lang beskrivelse av produktet"
@@ -27,7 +27,7 @@
   "isoCategory" : "12001314",
   "accessory" : false,
   "sparePart" : true,
-  "seriesUUID" : "aa84678c-5965-4780-9e28-860eb4e4ed05",
+  "seriesUUID" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
   "seriesId" : "series-123",
   "techData" : [ {
     "key" : "maksvekt",
@@ -41,19 +41,19 @@
     "type" : "IMAGE",
     "text" : "bilde av produktet",
     "source" : "EXTERNALURL",
-    "updated" : "2024-04-15T09:38:07.221601"
+    "updated" : "+999999999-12-31T23:59:59.999999999"
   } ],
-  "created" : "2024-04-15T09:38:07.221949",
-  "updated" : "2024-04-15T09:38:07.221958",
-  "published" : "2024-04-15T09:38:07.221961",
-  "expired" : "2044-04-15T09:38:07.221958",
+  "created" : "+999999999-12-31T23:59:59.999999999",
+  "updated" : "+999999999-12-31T23:59:59.999999999",
+  "published" : "+999999999-12-31T23:59:59.999999999",
+  "expired" : "+999999999-12-31T23:59:59.999999999",
   "agreementInfo" : {
-    "id" : "1596ea58-01a7-44a4-a2d9-c5202a9f9e42",
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
     "identifier" : "hmdbid-1",
     "rank" : 1,
     "postNr" : 1,
     "reference" : "AV-142",
-    "expired" : "2024-04-15T09:38:07.221779",
+    "expired" : "+999999999-12-31T23:59:59.999999999",
     "status" : "ACTIVE"
   },
   "agreements" : [ ],

@@ -21,15 +21,20 @@ class ProductRapidDTOTest {
 
     @Test
     fun testProductRapidDTO() {
+        val uuid = UUID.fromString("0d527ba0-d71e-4df5-8b1c-62e6f297e51e")
         val productDTO = ProductRapidDTO(
-            id = UUID.randomUUID(),
+            id = uuid,
             supplier = supplier,
+            created = LocalDateTime.MAX,
+            updated = LocalDateTime.MAX,
+            expired = LocalDateTime.MAX,
+            published = LocalDateTime.MAX,
             title = "Dette er produkt 1",
             articleName = "Dette er produkt 1 med og med",
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = setOf(UUID.randomUUID()))
+                compatibleWidth = CompatibleWith(seriesIds = setOf(uuid))
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",
@@ -37,7 +42,7 @@ class ProductRapidDTOTest {
             isoCategory = "12001314",
             accessory = false,
             sparePart = true,
-            seriesUUID = UUID.randomUUID(),
+            seriesUUID = uuid,
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
             media = setOf(
@@ -45,16 +50,17 @@ class ProductRapidDTOTest {
                     uri = "123.jpg",
                     text = "bilde av produktet",
                     source = MediaSourceType.EXTERNALURL,
-                    sourceUri = "https://ekstern.url/123.jpg"
+                    sourceUri = "https://ekstern.url/123.jpg",
+                    updated = LocalDateTime.MAX
                 )
             ),
             agreementInfo = AgreementInfo(
-                id = UUID.randomUUID(),
+                id = uuid,
                 identifier = "hmdbid-1",
                 rank = 1,
                 postNr = 1,
                 reference = "AV-142",
-                expired = LocalDateTime.now(),
+                expired = LocalDateTime.MAX,
                 status = ProductAgreementStatus.ACTIVE
             ),
             createdBy = "REGISTER",
