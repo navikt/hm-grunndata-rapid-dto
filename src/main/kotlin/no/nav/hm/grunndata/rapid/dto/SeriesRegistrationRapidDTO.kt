@@ -12,6 +12,8 @@ data class SeriesRegistrationRapidDTO(
     val text: String,
     val isoCategory: String,
     val status: SeriesStatus = SeriesStatus.ACTIVE,
+    val adminStatus: AdminStatus = AdminStatus.APPROVED,
+    val seriesData: SeriesData,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = LocalDateTime.now().plusYears(15),
@@ -20,5 +22,10 @@ data class SeriesRegistrationRapidDTO(
     val updatedByUser: String,
     val createdByUser: String,
     val createdByAdmin: Boolean = false,
+    val count: Int = 0,
     val version: Long? = 0L
 ): RapidDTO
+
+data class SeriesData(
+    val media: Set<MediaInfo> = emptySet()
+)
