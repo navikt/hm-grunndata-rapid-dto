@@ -1,0 +1,63 @@
+{
+  "id" : "9fe67a1d-abe0-4737-ade0-5de61bc4e61e",
+  "supplier" : {
+    "id" : "623ed209-6f17-46b5-9a6f-1dea82b58a4c",
+    "identifier" : "test-123",
+    "status" : "ACTIVE",
+    "name" : "testsupplier",
+    "info" : { },
+    "createdBy" : "test",
+    "updatedBy" : "test",
+    "created" : "2024-04-15T09:38:07.221142",
+    "updated" : "2024-04-15T09:38:07.221153"
+  },
+  "title" : "Dette er produkt 1",
+  "articleName" : "Dette er produkt 1 med og med",
+  "attributes" : {
+    "compatibleWidth" : {
+      "seriesIds" : [ "736a25f4-4ac5-4562-bc4a-89327d351de9" ]
+    },
+    "shortdescription" : "En kort beskrivelse av produktet",
+    "text" : "En lang beskrivelse av produktet"
+  },
+  "status" : "ACTIVE",
+  "hmsArtNr" : "111",
+  "identifier" : "hmdb-111",
+  "supplierRef" : "eksternref-111",
+  "isoCategory" : "12001314",
+  "accessory" : false,
+  "sparePart" : true,
+  "seriesUUID" : "aa84678c-5965-4780-9e28-860eb4e4ed05",
+  "seriesId" : "series-123",
+  "techData" : [ {
+    "key" : "maksvekt",
+    "value" : "120",
+    "unit" : "kg"
+  } ],
+  "media" : [ {
+    "sourceUri" : "https://ekstern.url/123.jpg",
+    "uri" : "123.jpg",
+    "priority" : -1,
+    "type" : "IMAGE",
+    "text" : "bilde av produktet",
+    "source" : "EXTERNALURL",
+    "updated" : "2024-04-15T09:38:07.221601"
+  } ],
+  "created" : "2024-04-15T09:38:07.221949",
+  "updated" : "2024-04-15T09:38:07.221958",
+  "published" : "2024-04-15T09:38:07.221961",
+  "expired" : "2044-04-15T09:38:07.221958",
+  "agreementInfo" : {
+    "id" : "1596ea58-01a7-44a4-a2d9-c5202a9f9e42",
+    "identifier" : "hmdbid-1",
+    "rank" : 1,
+    "postNr" : 1,
+    "reference" : "AV-142",
+    "expired" : "2024-04-15T09:38:07.221779",
+    "status" : "ACTIVE"
+  },
+  "agreements" : [ ],
+  "hasAgreement" : false,
+  "createdBy" : "REGISTER",
+  "updatedBy" : "REGISTER"
+}
