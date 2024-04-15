@@ -23,15 +23,20 @@ class ProductRegistrationDTOTest {
 
     @Test
     fun testProductRegistrationDTO() {
+        val uuid = UUID.fromString("a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2")
         val productDTO = ProductRapidDTO(
-            id = UUID.randomUUID(),
+            id = uuid,
+            created = LocalDateTime.MAX,
+            updated = LocalDateTime.MAX,
+            expired = LocalDateTime.MAX,
+            published = LocalDateTime.MAX,
             supplier = supplier,
             title = "Dette er produkt 1",
             articleName = "Dette er produkt 1 med og med",
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = setOf(UUID.randomUUID()))
+                compatibleWidth = CompatibleWith(seriesIds = setOf(uuid))
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",
@@ -39,7 +44,7 @@ class ProductRegistrationDTOTest {
             isoCategory = "12001314",
             accessory = false,
             sparePart = true,
-            seriesUUID = UUID.randomUUID(),
+            seriesUUID = uuid,
             seriesId = "series-123",
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
             media = setOf(
@@ -47,30 +52,33 @@ class ProductRegistrationDTOTest {
                     uri = "123.jpg",
                     text = "bilde av produktet",
                     source = MediaSourceType.EXTERNALURL,
-                    sourceUri = "https://ekstern.url/123.jpg"
+                    sourceUri = "https://ekstern.url/123.jpg",
+                    updated = LocalDateTime.MAX
                 )
             ),
             agreementInfo = AgreementInfo(
-                id = UUID.randomUUID(),
+                id = uuid,
                 identifier = "hmdbid-1",
                 rank = 1,
                 postNr = 1,
                 reference = "AV-142",
-                expired = LocalDateTime.now(),
+                expired = LocalDateTime.MAX,
                 status = ProductAgreementStatus.ACTIVE
             ),
             createdBy = "REGISTER",
             updatedBy = "REGISTER"
         )
         val productRegistration = ProductRegistrationRapidDTO(
-            id = productDTO.id,
+            id = uuid,
+            created = LocalDateTime.MAX,
+            updated = LocalDateTime.MAX,
             draftStatus = DraftStatus.DRAFT,
             adminStatus = AdminStatus.PENDING,
             registrationStatus = RegistrationStatus.ACTIVE,
             message = "Melding til leverandør",
             createdByAdmin = false,
-            expired = null,
-            published = null,
+            expired = LocalDateTime.MAX,
+            published = LocalDateTime.MAX,
             productDTO = productDTO,
             version = 1,
             createdBy = "REGISTER",
