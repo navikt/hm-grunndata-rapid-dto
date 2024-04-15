@@ -1,0 +1,32 @@
+{
+  "id" : "25b476d5-dd8c-4ed7-977e-447bc7301786",
+  "draftStatus" : "DONE",
+  "supplierId" : "cb87e3c5-ca28-41ad-a747-ea1acde29576",
+  "identifier" : "HMDB-123",
+  "title" : "Manuelle Rullestoler",
+  "text" : "En lang beskrivelse av serien",
+  "isoCategory" : "12001314",
+  "status" : "ACTIVE",
+  "adminStatus" : "APPROVED",
+  "seriesData" : {
+    "media" : [ {
+      "sourceUri" : "https://localhost/123.jpg",
+      "uri" : "123.jog",
+      "priority" : -1,
+      "type" : "IMAGE",
+      "text" : "bilde av serien",
+      "source" : "REGISTER",
+      "updated" : "2024-04-15T10:02:28.349208"
+    } ]
+  },
+  "created" : "2024-04-15T10:02:28.348102",
+  "updated" : "2024-04-15T10:02:28.348106",
+  "expired" : "2026-04-15T10:02:28.348541",
+  "createdBy" : "HMDB",
+  "updatedBy" : "HMDB",
+  "updatedByUser" : "admin",
+  "createdByUser" : "admin",
+  "createdByAdmin" : true,
+  "count" : 1,
+  "version" : 1
+}
