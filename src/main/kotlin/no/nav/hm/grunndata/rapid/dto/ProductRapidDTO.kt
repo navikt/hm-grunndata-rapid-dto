@@ -54,7 +54,7 @@ data class AgreementInfo (
     val reference: String,
     val expired: LocalDateTime,
     val published: LocalDateTime?=null,
-    val status: ProductAgreementStatus
+    val status: ProductAgreementStatus = ProductAgreementStatus.ACTIVE
 )
 
 enum class ProductStatus {

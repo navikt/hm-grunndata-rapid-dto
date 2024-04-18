@@ -53,8 +53,7 @@
     "rank" : 1,
     "postNr" : 1,
     "reference" : "AV-142",
-    "expired" : "2024-04-15T09:03:26.940082",
-    "status" : "ACTIVE"
+    "expired" : "2024-04-15T09:03:26.940082"
   },
   "agreements" : [ ],
   "hasAgreement" : false,

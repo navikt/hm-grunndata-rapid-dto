@@ -63,6 +63,26 @@ class ProductRapidDTOTest {
                 expired = LocalDateTime.MAX,
                 status = ProductAgreementStatus.ACTIVE
             ),
+            agreements = listOf(
+                AgreementInfo(
+                    id = uuid,
+                    identifier = "hmdbid-1",
+                    rank = 1,
+                    postNr = 1,
+                    reference = "AV-142",
+                    expired = LocalDateTime.MAX,
+                    status = ProductAgreementStatus.ACTIVE
+                ),
+                AgreementInfo(
+                    id = uuid,
+                    identifier = "hmdbid-1",
+                    rank = 2,
+                    postNr = 2,
+                    reference = "AV-143",
+                    expired = LocalDateTime.MAX,
+                    status = ProductAgreementStatus.ACTIVE
+                )
+            ),
             createdBy = "REGISTER",
             updatedBy = "REGISTER"
         )

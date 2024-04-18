@@ -56,8 +56,24 @@
     "expired" : "+999999999-12-31T23:59:59.999999999",
     "status" : "ACTIVE"
   },
-  "agreements" : [ ],
-  "hasAgreement" : false,
+  "agreements" : [ {
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
+    "identifier" : "hmdbid-1",
+    "rank" : 1,
+    "postNr" : 1,
+    "reference" : "AV-142",
+    "expired" : "+999999999-12-31T23:59:59.999999999",
+    "status" : "ACTIVE"
+  }, {
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
+    "identifier" : "hmdbid-1",
+    "rank" : 2,
+    "postNr" : 2,
+    "reference" : "AV-143",
+    "expired" : "+999999999-12-31T23:59:59.999999999",
+    "status" : "ACTIVE"
+  } ],
+  "hasAgreement" : true,
   "createdBy" : "REGISTER",
   "updatedBy" : "REGISTER"
 }
