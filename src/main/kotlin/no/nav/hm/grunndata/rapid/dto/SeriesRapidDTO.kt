@@ -10,6 +10,7 @@ data class SeriesRapidDTO (
     val title: String,
     val text: String,
     val isoCategory: String,
+    val seriesData: SeriesData? = null,
     val supplierId: UUID,
     val identifier: String,
     val createdBy: String,
