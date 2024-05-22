@@ -1,15 +1,16 @@
 package no.nav.hm.grunndata.rapid.dto
 
 import java.time.LocalDateTime
-import java.util.*
+import java.util.UUID
 
 data class SeriesRegistrationRapidDTO(
     override val id: UUID,
     val draftStatus: DraftStatus = DraftStatus.DRAFT,
-    val supplierId:UUID,
+    val supplierId: UUID,
     val identifier: String,
     val title: String,
     val text: String,
+    val formattedText: String? = null,
     val isoCategory: String,
     val status: SeriesStatus = SeriesStatus.ACTIVE,
     val adminStatus: AdminStatus = AdminStatus.APPROVED,
@@ -24,7 +25,7 @@ data class SeriesRegistrationRapidDTO(
     val createdByAdmin: Boolean = false,
     val count: Int = 0,
     val version: Long? = 0L
-): RapidDTO
+) : RapidDTO
 
 data class SeriesData(
     val media: Set<MediaInfo> = emptySet()
