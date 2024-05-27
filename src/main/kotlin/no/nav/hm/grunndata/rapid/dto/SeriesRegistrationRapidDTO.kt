@@ -28,5 +28,10 @@ data class SeriesRegistrationRapidDTO(
 ) : RapidDTO
 
 data class SeriesData(
-    val media: Set<MediaInfo> = emptySet()
+    val media: Set<MediaInfo> = emptySet(),
+    val attributes: SeriesAttributes = SeriesAttributes()
+)
+
+data class SeriesAttributes(
+    val keywords: List<String>? = null
 )
