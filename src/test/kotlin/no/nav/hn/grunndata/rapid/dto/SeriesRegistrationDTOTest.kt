@@ -6,6 +6,7 @@ import no.nav.hm.grunndata.rapid.dto.AdminStatus
 import no.nav.hm.grunndata.rapid.dto.DraftStatus
 import no.nav.hm.grunndata.rapid.dto.MediaInfo
 import no.nav.hm.grunndata.rapid.dto.MediaSourceType
+import no.nav.hm.grunndata.rapid.dto.SeriesAttributes
 import no.nav.hm.grunndata.rapid.dto.SeriesData
 import no.nav.hm.grunndata.rapid.dto.SeriesRegistrationRapidDTO
 import no.nav.hm.grunndata.rapid.dto.SeriesStatus
@@ -48,7 +49,8 @@ class SeriesRegistrationDTOTest {
                         sourceUri = "https://localhost/123.jpg",
                         updated = LocalDateTime.MAX
                     )
-                )
+                ),
+                attributes = SeriesAttributes(keywords = listOf("keyword1", "keyword2"))
             )
         )
         //Serialize the object to a file

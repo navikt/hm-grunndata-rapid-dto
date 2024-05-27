@@ -17,7 +17,10 @@
       "text" : "bilde av serien",
       "source" : "REGISTER",
       "updated" : "+999999999-12-31T23:59:59.999999999"
-    } ]
+    } ],
+    "attributes" : {
+      "keywords" : [ "keyword1", "keyword2" ]
+    }
   },
   "created" : "+999999999-12-31T23:59:59.999999999",
   "updated" : "+999999999-12-31T23:59:59.999999999",
