@@ -11,8 +11,11 @@ data class SeriesImportRapidDTO(
     val text: String,
     val isoCategory: String,
     val status: SeriesStatus = SeriesStatus.ACTIVE,
+    val seriesData: SeriesData = SeriesData(),
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime,
     val version: Long
 ): RapidDTO
+
+
