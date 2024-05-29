@@ -18,6 +18,7 @@ data class SeriesRegistrationRapidDTO(
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = LocalDateTime.now().plusYears(15),
+    val published: LocalDateTime = LocalDateTime.now(),
     val createdBy: String,
     val updatedBy: String,
     val updatedByUser: String,
