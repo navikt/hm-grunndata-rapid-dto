@@ -34,5 +34,5 @@ data class SeriesData(
 )
 
 data class SeriesAttributes(
-    val keywords: List<String>? = null
+    val keywords: Set<String>? = null
 )
