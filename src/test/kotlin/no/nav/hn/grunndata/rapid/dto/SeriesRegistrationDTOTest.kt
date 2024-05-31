@@ -50,7 +50,7 @@ class SeriesRegistrationDTOTest {
                         updated = LocalDateTime.MAX
                     )
                 ),
-                attributes = SeriesAttributes(keywords = listOf("keyword1", "keyword2"))
+                attributes = SeriesAttributes(keywords = setOf("keyword1", "keyword2"))
             )
         )
         //Serialize the object to a file
