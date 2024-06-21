@@ -22,8 +22,8 @@ class ProductRapidDTOTest {
     @Test
     fun testProductRapidDTO() {
         val uuid = UUID.fromString("0d527ba0-d71e-4df5-8b1c-62e6f297e51e")
-        val seriesId = UUID.randomUUID()
-        val productId = UUID.randomUUID()
+        val seriesId = UUID.fromString("e24a1c0-0f57-494a-b5d7-af735356ee4f")
+        val productId = UUID.fromString("2238e5d7-09a3-4a90-9a33-7010f26e5793")
         val productDTO = ProductRapidDTO(
             id = uuid,
             supplier = supplier,

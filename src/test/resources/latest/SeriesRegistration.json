@@ -21,7 +21,7 @@
     "attributes" : {
       "keywords" : [ "keyword1", "keyword2" ],
       "compatibleWith" : {
-        "seriesIds" : [ "3a2f2a0c-d8af-4953-ba8e-209d718ec554" ],
+        "seriesIds" : [ "03f4f08f-36ec-4b7e-87ca-5542612a7ee5" ],
         "productIds" : [ ]
       }
     }
@@ -29,7 +29,7 @@
   "created" : "+999999999-12-31T23:59:59.999999999",
   "updated" : "+999999999-12-31T23:59:59.999999999",
   "expired" : "+999999999-12-31T23:59:59.999999999",
-  "published" : "2024-06-21T08:17:02.483325",
+  "published" : "+999999999-12-31T23:59:59.999999999",
   "createdBy" : "HMDB",
   "updatedBy" : "HMDB",
   "updatedByUser" : "admin",

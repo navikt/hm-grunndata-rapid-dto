@@ -21,7 +21,7 @@ class SeriesRegistrationDTOTest {
     @Test
     fun testSeriesRegistrationDTO() {
         val uuid = UUID.fromString("03f4f08f-36ec-4b7e-87ca-5542612a7ee5")
-        val seriesId = UUID.randomUUID()
+        val seriesId = UUID.fromString("03f4f08f-36ec-4b7e-87ca-5542612a7ee5")
         val seriesRegistration = SeriesRegistrationRapidDTO(
             id = uuid,
             supplierId = uuid,
@@ -37,6 +37,7 @@ class SeriesRegistrationDTOTest {
             adminStatus = AdminStatus.APPROVED,
             expired = LocalDateTime.MAX,
             draftStatus = DraftStatus.DONE,
+            published = LocalDateTime.MAX,
             count = 1,
             version = 1,
             createdByUser = "admin",
@@ -53,7 +54,7 @@ class SeriesRegistrationDTOTest {
                     )
                 ),
                 attributes = SeriesAttributes(keywords = setOf("keyword1", "keyword2"),
-                    compatibleWith = CompatibleWith(seriesIds = setOf(UUID.randomUUID())))
+                    compatibleWith = CompatibleWith(seriesIds = setOf(seriesId)))
             )
         )
         //Serialize the object to a file

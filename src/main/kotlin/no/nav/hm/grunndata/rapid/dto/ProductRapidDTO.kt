@@ -111,4 +111,4 @@ data class Attributes(
     val hasTender: Boolean? = null,
 )
 
-data class CompatibleWith (val seriesIds: Set<UUID>? = emptySet(), val productIds: Set<UUID>? = emptySet())
+data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())
