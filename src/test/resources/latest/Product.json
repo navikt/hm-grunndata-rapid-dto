@@ -15,7 +15,8 @@
   "articleName" : "Dette er produkt 1 med og med",
   "attributes" : {
     "compatibleWidth" : {
-      "seriesIds" : [ "0d527ba0-d71e-4df5-8b1c-62e6f297e51e" ]
+      "seriesIds" : [ "38d5959c-916f-457d-b283-84ef99367e24" ],
+      "productIds" : [ "7001bd51-706d-46e6-9172-36fec1b6ffad" ]
     },
     "shortdescription" : "En kort beskrivelse av produktet",
     "text" : "En lang beskrivelse av produktet"

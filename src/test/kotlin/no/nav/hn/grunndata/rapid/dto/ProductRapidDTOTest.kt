@@ -22,6 +22,8 @@ class ProductRapidDTOTest {
     @Test
     fun testProductRapidDTO() {
         val uuid = UUID.fromString("0d527ba0-d71e-4df5-8b1c-62e6f297e51e")
+        val seriesId = UUID.randomUUID()
+        val productId = UUID.randomUUID()
         val productDTO = ProductRapidDTO(
             id = uuid,
             supplier = supplier,
@@ -34,7 +36,7 @@ class ProductRapidDTOTest {
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = setOf(uuid))
+                compatibleWidth = CompatibleWith(seriesIds = setOf(seriesId), productIds = setOf(productId))
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",

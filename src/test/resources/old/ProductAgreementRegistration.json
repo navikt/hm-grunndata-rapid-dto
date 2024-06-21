@@ -1,18 +1,18 @@
 {
-  "id" : "1029df7c-7341-4070-905f-678097535551",
-  "productId" : "fa637b58-4a26-44ac-b526-0ba365f0251b",
+  "id" : "a03629d9-0c33-48b8-b997-fe940a153718",
+  "productId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "title" : "beskrivelse av produktet",
-  "supplierId" : "dfd1cc66-2f99-488b-aa67-368cf6af31cf",
+  "supplierId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "supplierRef" : "eksternref-1",
   "hmsArtNr" : "111",
-  "agreementId" : "818a6304-c796-4c97-96a1-2044485a2aa8",
+  "agreementId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "reference" : "AV-142",
   "post" : 1,
   "rank" : 1,
   "status" : "ACTIVE",
   "createdBy" : "REGISTER",
-  "created" : "2023-12-14T10:49:07.12425",
-  "updated" : "2023-12-14T10:49:07.124266",
-  "published" : "2023-12-14T10:49:07.124269",
-  "expired" : "2027-12-14T10:49:07.124272"
+  "created" : "+999999999-12-31T23:59:59.999999999",
+  "updated" : "+999999999-12-31T23:59:59.999999999",
+  "published" : "+999999999-12-31T23:59:59.999999999",
+  "expired" : "+999999999-12-31T23:59:59.999999999"
 }

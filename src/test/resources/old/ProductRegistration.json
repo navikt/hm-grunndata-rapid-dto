@@ -1,43 +1,37 @@
 {
-  "id" : "e2a84ea5-197d-471e-bf7e-361eede21583",
-  "supplierId" : "ac46694f-e81c-406c-a8d5-8ca1e7cf499e",
-  "supplierRef" : "eksternref-111",
-  "hmsArtNr" : "111",
-  "title" : "Dette er produkt 1",
-  "articleName" : "Dette er produkt 1 med og med",
+  "id" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
   "draftStatus" : "DRAFT",
-  "adminStatus" : "NOT_APPROVED",
-  "status" : "ACTIVE",
+  "adminStatus" : "PENDING",
+  "registrationStatus" : "ACTIVE",
   "message" : "Melding til leverandør",
-  "created" : "2023-03-27T12:59:11.195938",
-  "updated" : "2023-03-27T12:59:11.195961",
-  "updatedByUser" : "email",
-  "createdByUser" : "email",
+  "created" : "+999999999-12-31T23:59:59.999999999",
+  "updated" : "+999999999-12-31T23:59:59.999999999",
+  "published" : "+999999999-12-31T23:59:59.999999999",
+  "expired" : "+999999999-12-31T23:59:59.999999999",
   "createdBy" : "REGISTER",
   "updatedBy" : "REGISTER",
   "createdByAdmin" : false,
   "productDTO" : {
-    "id" : "e2a84ea5-197d-471e-bf7e-361eede21583",
+    "id" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
     "supplier" : {
-      "id" : "ac46694f-e81c-406c-a8d5-8ca1e7cf499e",
+      "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
       "identifier" : "test-123",
       "status" : "ACTIVE",
       "name" : "testsupplier",
       "info" : { },
       "createdBy" : "test",
       "updatedBy" : "test",
-      "created" : "2023-03-27T12:59:11.029773",
-      "updated" : "2023-03-27T12:59:11.031149"
+      "created" : "+999999999-12-31T23:59:59.999999999",
+      "updated" : "+999999999-12-31T23:59:59.999999999"
     },
     "title" : "Dette er produkt 1",
     "articleName" : "Dette er produkt 1 med og med",
     "attributes" : {
+      "compatibleWidth" : {
+        "seriesIds" : [ "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2" ]
+      },
       "shortdescription" : "En kort beskrivelse av produktet",
-      "text" : "En lang beskrivelse av produktet",
-      "compatibleWidth": {
-        "ids": ["e2a84ea5-197d-471e-bf7e-361eede21583"],
-        "seriesIds":["e2a84ea5-197d-471e-bf7e-361eede21583"]
-      }
+      "text" : "En lang beskrivelse av produktet"
     },
     "status" : "ACTIVE",
     "hmsArtNr" : "111",
@@ -46,6 +40,7 @@
     "isoCategory" : "12001314",
     "accessory" : false,
     "sparePart" : true,
+    "seriesUUID" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
     "seriesId" : "series-123",
     "techData" : [ {
       "key" : "maksvekt",
@@ -53,28 +48,29 @@
       "unit" : "kg"
     } ],
     "media" : [ {
-      "oid" : "c6eca54d-6948-46a5-bff8-b0a0f72c245a",
       "sourceUri" : "https://ekstern.url/123.jpg",
       "uri" : "123.jpg",
-      "priority" : 1,
+      "priority" : -1,
       "type" : "IMAGE",
       "text" : "bilde av produktet",
-      "source" : "EXTERNALURL"
+      "source" : "EXTERNALURL",
+      "updated" : "+999999999-12-31T23:59:59.999999999"
     } ],
-    "created" : "2023-03-27T12:59:11.194795",
-    "updated" : "2023-03-27T12:59:11.194819",
-    "published" : "2023-03-27T12:59:11.194828",
-    "expired" : "2043-03-27T12:59:11.194819",
+    "created" : "+999999999-12-31T23:59:59.999999999",
+    "updated" : "+999999999-12-31T23:59:59.999999999",
+    "published" : "+999999999-12-31T23:59:59.999999999",
+    "expired" : "+999999999-12-31T23:59:59.999999999",
     "agreementInfo" : {
-      "id" : "eec7c623-75ea-48ff-969e-13fd3b080d0d",
+      "id" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
       "identifier" : "hmdbid-1",
       "rank" : 1,
       "postNr" : 1,
       "reference" : "AV-142",
-      "expired" : "2023-03-27T12:59:11.194509",
-      "status": "ACTIVE"
+      "expired" : "+999999999-12-31T23:59:59.999999999",
+      "status" : "ACTIVE"
     },
-    "hasAgreement" : true,
+    "agreements" : [ ],
+    "hasAgreement" : false,
     "createdBy" : "REGISTER",
     "updatedBy" : "REGISTER"
   },

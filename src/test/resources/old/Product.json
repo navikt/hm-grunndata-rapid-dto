@@ -1,21 +1,21 @@
 {
-  "id" : "196a2f40-b04b-4690-8b6b-d2cb2c5cc30a",
+  "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
   "supplier" : {
-    "id" : "b7d5a26b-0ad5-49b7-8566-95112a99e74e",
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
     "identifier" : "test-123",
     "status" : "ACTIVE",
     "name" : "testsupplier",
     "info" : { },
     "createdBy" : "test",
     "updatedBy" : "test",
-    "created" : "2024-04-15T09:03:26.930407",
-    "updated" : "2024-04-15T09:03:26.931582"
+    "created" : "+999999999-12-31T23:59:59.999999999",
+    "updated" : "+999999999-12-31T23:59:59.999999999"
   },
   "title" : "Dette er produkt 1",
   "articleName" : "Dette er produkt 1 med og med",
   "attributes" : {
     "compatibleWidth" : {
-      "seriesIds" : [ "08c51751-65e7-4807-b8bc-500072c0faf9" ]
+      "seriesIds" : [ "0d527ba0-d71e-4df5-8b1c-62e6f297e51e" ]
     },
     "shortdescription" : "En kort beskrivelse av produktet",
     "text" : "En lang beskrivelse av produktet"
@@ -27,7 +27,7 @@
   "isoCategory" : "12001314",
   "accessory" : false,
   "sparePart" : true,
-  "seriesUUID" : "9a59972c-de37-4c63-b953-a7a05074ae26",
+  "seriesUUID" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
   "seriesId" : "series-123",
   "techData" : [ {
     "key" : "maksvekt",
@@ -41,22 +41,39 @@
     "type" : "IMAGE",
     "text" : "bilde av produktet",
     "source" : "EXTERNALURL",
-    "updated" : "2024-04-15T09:03:26.939911"
+    "updated" : "+999999999-12-31T23:59:59.999999999"
   } ],
-  "created" : "2024-04-15T09:03:26.940233",
-  "updated" : "2024-04-15T09:03:26.940238",
-  "published" : "2024-04-15T09:03:26.940241",
-  "expired" : "2044-04-15T09:03:26.940238",
+  "created" : "+999999999-12-31T23:59:59.999999999",
+  "updated" : "+999999999-12-31T23:59:59.999999999",
+  "published" : "+999999999-12-31T23:59:59.999999999",
+  "expired" : "+999999999-12-31T23:59:59.999999999",
   "agreementInfo" : {
-    "id" : "7a73a989-2771-4781-8c31-c056035ad58f",
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
     "identifier" : "hmdbid-1",
     "rank" : 1,
     "postNr" : 1,
     "reference" : "AV-142",
-    "expired" : "2024-04-15T09:03:26.940082"
+    "expired" : "+999999999-12-31T23:59:59.999999999",
+    "status" : "ACTIVE"
   },
-  "agreements" : [ ],
-  "hasAgreement" : false,
+  "agreements" : [ {
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
+    "identifier" : "hmdbid-1",
+    "rank" : 1,
+    "postNr" : 1,
+    "reference" : "AV-142",
+    "expired" : "+999999999-12-31T23:59:59.999999999",
+    "status" : "ACTIVE"
+  }, {
+    "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
+    "identifier" : "hmdbid-1",
+    "rank" : 2,
+    "postNr" : 2,
+    "reference" : "AV-143",
+    "expired" : "+999999999-12-31T23:59:59.999999999",
+    "status" : "ACTIVE"
+  } ],
+  "hasAgreement" : true,
   "createdBy" : "REGISTER",
   "updatedBy" : "REGISTER"
 }

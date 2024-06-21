@@ -14,12 +14,14 @@ import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime
 import java.util.*
+import no.nav.hm.grunndata.rapid.dto.CompatibleWith
 
 class SeriesRegistrationDTOTest {
 
     @Test
     fun testSeriesRegistrationDTO() {
         val uuid = UUID.fromString("03f4f08f-36ec-4b7e-87ca-5542612a7ee5")
+        val seriesId = UUID.randomUUID()
         val seriesRegistration = SeriesRegistrationRapidDTO(
             id = uuid,
             supplierId = uuid,
@@ -50,7 +52,8 @@ class SeriesRegistrationDTOTest {
                         updated = LocalDateTime.MAX
                     )
                 ),
-                attributes = SeriesAttributes(keywords = setOf("keyword1", "keyword2"))
+                attributes = SeriesAttributes(keywords = setOf("keyword1", "keyword2"),
+                    compatibleWith = CompatibleWith(seriesIds = setOf(UUID.randomUUID())))
             )
         )
         //Serialize the object to a file
