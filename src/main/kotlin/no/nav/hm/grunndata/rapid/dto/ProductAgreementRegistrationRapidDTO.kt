@@ -17,6 +17,7 @@ class ProductAgreementRegistrationRapidDTO(
     val rank: Int,
     val status: ProductAgreementStatus,
     val createdBy: String,
+    val updatedBy: String = createdBy,
     val created: LocalDateTime,
     val updated: LocalDateTime,
     val published: LocalDateTime,

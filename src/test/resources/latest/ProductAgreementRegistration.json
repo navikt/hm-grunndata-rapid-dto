@@ -11,6 +11,7 @@
   "rank" : 1,
   "status" : "ACTIVE",
   "createdBy" : "REGISTER",
+  "updatedBy" : "REGISTER",
   "created" : "+999999999-12-31T23:59:59.999999999",
   "updated" : "+999999999-12-31T23:59:59.999999999",
   "published" : "+999999999-12-31T23:59:59.999999999",
