@@ -3,10 +3,11 @@ package no.nav.hm.grunndata.rapid.dto
 import java.time.LocalDateTime
 import java.util.*
 
-data class DigitalSoknadRegistrationRapidDTO(
+data class DigitalSoknadSortimentRegistrationRapidDTO(
     override val id: UUID,
-    val hmsArtNr: String,
-    val status: DigitalSoknadStatus = DigitalSoknadStatus.ACTIVE,
+    val sortimentKategori: String,
+    val postId: UUID,
+    val status: DigitalSoknadSortimentStatus = DigitalSoknadSortimentStatus.ACTIVE,
     val updatedByUser: String = "system",
     val createdByUser: String = "system",
     val created: LocalDateTime = LocalDateTime.now(),
@@ -14,6 +15,6 @@ data class DigitalSoknadRegistrationRapidDTO(
     val deactivated: LocalDateTime? = null
 ): RapidDTO
 
-enum class DigitalSoknadStatus {
+enum class DigitalSoknadSortimentStatus {
     ACTIVE, INACTIVE
 }
