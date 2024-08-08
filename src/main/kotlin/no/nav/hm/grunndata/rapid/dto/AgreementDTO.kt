@@ -21,7 +21,7 @@ data class AgreementDTO(
     val updatedBy: String,
     val created: LocalDateTime = LocalDateTime.now(),
     val updated: LocalDateTime = LocalDateTime.now(),
-    val pastAgreement: UUID? = null
+    val previousAgreement: UUID? = null
 ) : RapidDTO
 
 data class AgreementPost(

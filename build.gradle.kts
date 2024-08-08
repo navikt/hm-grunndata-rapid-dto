@@ -15,8 +15,8 @@ group = "no.nav.hm.grunndata"
 version = properties["version"] ?: "local-build"
 
 plugins {
-    kotlin("jvm") version "1.8.22"
-    kotlin("kapt") version "1.8.22"
+    kotlin("jvm") version "1.9.21"
+    kotlin("kapt") version "1.9.21"
     id("java")
     id("maven-publish")
 }
@@ -104,7 +104,7 @@ tasks.withType<Test> {
 }
 
 tasks.withType<Wrapper> {
-    gradleVersion = "8.0.1"
+    gradleVersion = "8.5"
 }
 
 
