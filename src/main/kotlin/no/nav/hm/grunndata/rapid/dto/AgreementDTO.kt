@@ -27,7 +27,7 @@ data class AgreementDTO(
 data class AgreementPost(
     val identifier: String,
     val id: UUID? = UUID.randomUUID(),
-    val type: DelKonktrakType = DelKonktrakType.WITH_DELKONTRAKT,
+    val type: DelkonktraktType = DelkonktraktType.WITH_DELKONTRAKT,
     val nr: Int,
     val refNr: String? = null,
     val title: String,
@@ -35,7 +35,7 @@ data class AgreementPost(
     val created: LocalDateTime = LocalDateTime.now()
 )
 
-enum class DelKonktrakType {
+enum class DelkonktraktType {
     WITH_DELKONTRAKT, WITH_NO_DELKONTRAKT
 }
 
