@@ -37,6 +37,7 @@
     "posts" : [ {
       "identifier" : "HMDB-43",
       "id" : "636c264b-b974-43b6-b823-a11b9f532b97",
+      "type" : "WITH_DELKONTRAKT",
       "nr" : 1,
       "title" : "post 1",
       "description" : "Beskrivelse av post",
