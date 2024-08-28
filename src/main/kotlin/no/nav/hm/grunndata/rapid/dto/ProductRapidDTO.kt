@@ -6,6 +6,7 @@ import java.util.*
 
 data class ProductRapidDTO(
     override val id: UUID,
+    override val partitionKey: String = id.toString(),
     val supplier: SupplierDTO,
     val title: String,
     val articleName: String,
