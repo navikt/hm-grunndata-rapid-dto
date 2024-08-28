@@ -9,7 +9,8 @@
     "createdBy" : "test",
     "updatedBy" : "test",
     "created" : "+999999999-12-31T23:59:59.999999999",
-    "updated" : "+999999999-12-31T23:59:59.999999999"
+    "updated" : "+999999999-12-31T23:59:59.999999999",
+    "partitionKey" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e"
   },
   "title" : "Dette er produkt 1",
   "articleName" : "Dette er produkt 1 med og med",
@@ -76,5 +77,6 @@
   } ],
   "hasAgreement" : true,
   "createdBy" : "REGISTER",
-  "updatedBy" : "REGISTER"
+  "updatedBy" : "REGISTER",
+  "partitionKey" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e"
 }

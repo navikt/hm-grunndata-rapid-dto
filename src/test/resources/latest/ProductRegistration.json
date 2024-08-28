@@ -1,5 +1,6 @@
 {
   "id" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
+  "partitionKey" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
   "draftStatus" : "DRAFT",
   "adminStatus" : "PENDING",
   "registrationStatus" : "ACTIVE",
@@ -22,7 +23,8 @@
       "createdBy" : "test",
       "updatedBy" : "test",
       "created" : "+999999999-12-31T23:59:59.999999999",
-      "updated" : "+999999999-12-31T23:59:59.999999999"
+      "updated" : "+999999999-12-31T23:59:59.999999999",
+      "partitionKey" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e"
     },
     "title" : "Dette er produkt 1",
     "articleName" : "Dette er produkt 1 med og med",
@@ -41,8 +43,8 @@
     "isoCategory" : "12001314",
     "accessory" : false,
     "sparePart" : true,
-    "seriesUUID" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
-    "seriesId" : "series-123",
+    "seriesUUID" : "26e8a4cb-24ca-470f-a8c6-7612b5579288",
+    "seriesId" : "26e8a4cb-24ca-470f-a8c6-7612b5579288",
     "techData" : [ {
       "key" : "maksvekt",
       "value" : "120",
@@ -73,7 +75,9 @@
     "agreements" : [ ],
     "hasAgreement" : false,
     "createdBy" : "REGISTER",
-    "updatedBy" : "REGISTER"
+    "updatedBy" : "REGISTER",
+    "partitionKey" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2"
   },
+  "seriesId" : "26e8a4cb-24ca-470f-a8c6-7612b5579288",
   "version" : 1
 }

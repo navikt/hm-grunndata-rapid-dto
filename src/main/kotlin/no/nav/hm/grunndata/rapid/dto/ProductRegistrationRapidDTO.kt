@@ -6,6 +6,7 @@ import java.util.*
 
 data class ProductRegistrationRapidDTO (
     override val id: UUID,
+    override val partitionKey: String = id.toString(),
     val draftStatus: DraftStatus = DraftStatus.DRAFT,
     val adminStatus: AdminStatus = AdminStatus.PENDING,
     val registrationStatus: RegistrationStatus = RegistrationStatus.ACTIVE,
@@ -18,6 +19,7 @@ data class ProductRegistrationRapidDTO (
     val updatedBy: String,
     val createdByAdmin: Boolean = false,
     val productDTO: ProductRapidDTO,
+    val seriesId: UUID? = productDTO.seriesUUID,
     val version: Long?=null
 ) : RapidDTO
 

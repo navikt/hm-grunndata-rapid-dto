@@ -24,6 +24,7 @@ class ProductRegistrationDTOTest {
     @Test
     fun testProductRegistrationDTO() {
         val uuid = UUID.fromString("a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2")
+        val seriesId = UUID.randomUUID()
         val productDTO = ProductRapidDTO(
             id = uuid,
             created = LocalDateTime.MAX,
@@ -44,8 +45,8 @@ class ProductRegistrationDTOTest {
             isoCategory = "12001314",
             accessory = false,
             sparePart = true,
-            seriesUUID = uuid,
-            seriesId = "series-123",
+            seriesUUID = seriesId,
+            seriesId = seriesId.toString(),
             techData = listOf(TechData(key = "maksvekt", unit = "kg", value = "120")),
             media = setOf(
                 MediaInfo(
@@ -82,7 +83,9 @@ class ProductRegistrationDTOTest {
             productDTO = productDTO,
             version = 1,
             createdBy = "REGISTER",
-            updatedBy = "REGISTER"
+            updatedBy = "REGISTER",
+            seriesId = seriesId
+
         )
         //Serialize the object to a file
         FileOutputStream("./src/test/resources/latest/ProductRegistration.json").use {
