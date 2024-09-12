@@ -98,6 +98,7 @@ data class PakrevdGodkjenningskurs (
 data class Attributes(
     val manufacturer: String? = null,
     val compatibleWidth: CompatibleWith? = null,
+    val alternativeFor: AlternativeFor? = null,
     val keywords: List<String>? = null,
     val series: String? = null,
     val shortdescription: String? = null,
@@ -111,5 +112,7 @@ data class Attributes(
     val tenderId: String? = null,
     val hasTender: Boolean? = null,
 )
+
+data class AlternativeFor(val hmsArtNr: Set<String> = emptySet())
 
 data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())

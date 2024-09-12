@@ -1,5 +1,6 @@
 {
   "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
+  "partitionKey" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
   "supplier" : {
     "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
     "identifier" : "test-123",
@@ -9,13 +10,15 @@
     "createdBy" : "test",
     "updatedBy" : "test",
     "created" : "+999999999-12-31T23:59:59.999999999",
-    "updated" : "+999999999-12-31T23:59:59.999999999"
+    "updated" : "+999999999-12-31T23:59:59.999999999",
+    "partitionKey" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e"
   },
   "title" : "Dette er produkt 1",
   "articleName" : "Dette er produkt 1 med og med",
   "attributes" : {
     "compatibleWidth" : {
-      "seriesIds" : [ "0d527ba0-d71e-4df5-8b1c-62e6f297e51e" ]
+      "seriesIds" : [ "0e24a1c0-0f57-494a-b5d7-af735356ee4f" ],
+      "productIds" : [ "2238e5d7-09a3-4a90-9a33-7010f26e5793" ]
     },
     "shortdescription" : "En kort beskrivelse av produktet",
     "text" : "En lang beskrivelse av produktet"

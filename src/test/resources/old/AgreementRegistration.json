@@ -37,6 +37,7 @@
     "posts" : [ {
       "identifier" : "HMDB-43",
       "id" : "636c264b-b974-43b6-b823-a11b9f532b97",
+      "type" : "WITH_DELKONTRAKT",
       "nr" : 1,
       "title" : "post 1",
       "description" : "Beskrivelse av post",
@@ -46,6 +47,8 @@
     "createdBy" : "HMDB",
     "updatedBy" : "HMDB",
     "created" : "+999999999-12-31T23:59:59.999999999",
-    "updated" : "+999999999-12-31T23:59:59.999999999"
-  }
+    "updated" : "+999999999-12-31T23:59:59.999999999",
+    "partitionKey" : "636c264b-b974-43b6-b823-a11b9f532b97"
+  },
+  "partitionKey" : "636c264b-b974-43b6-b823-a11b9f532b97"
 }

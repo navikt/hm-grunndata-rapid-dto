@@ -1,5 +1,6 @@
 {
   "id" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
+  "partitionKey" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
   "draftStatus" : "DRAFT",
   "adminStatus" : "PENDING",
   "registrationStatus" : "ACTIVE",
@@ -13,6 +14,7 @@
   "createdByAdmin" : false,
   "productDTO" : {
     "id" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
+    "partitionKey" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
     "supplier" : {
       "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
       "identifier" : "test-123",
@@ -22,13 +24,15 @@
       "createdBy" : "test",
       "updatedBy" : "test",
       "created" : "+999999999-12-31T23:59:59.999999999",
-      "updated" : "+999999999-12-31T23:59:59.999999999"
+      "updated" : "+999999999-12-31T23:59:59.999999999",
+      "partitionKey" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e"
     },
     "title" : "Dette er produkt 1",
     "articleName" : "Dette er produkt 1 med og med",
     "attributes" : {
       "compatibleWidth" : {
-        "seriesIds" : [ "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2" ]
+        "seriesIds" : [ "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2" ],
+        "productIds" : [ ]
       },
       "shortdescription" : "En kort beskrivelse av produktet",
       "text" : "En lang beskrivelse av produktet"
@@ -40,8 +44,8 @@
     "isoCategory" : "12001314",
     "accessory" : false,
     "sparePart" : true,
-    "seriesUUID" : "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2",
-    "seriesId" : "series-123",
+    "seriesUUID" : "3f92acf4-1198-402e-b95d-6efdae9a7d3a",
+    "seriesId" : "3f92acf4-1198-402e-b95d-6efdae9a7d3a",
     "techData" : [ {
       "key" : "maksvekt",
       "value" : "120",
@@ -74,5 +78,6 @@
     "createdBy" : "REGISTER",
     "updatedBy" : "REGISTER"
   },
+  "seriesId" : "3f92acf4-1198-402e-b95d-6efdae9a7d3a",
   "version" : 1
 }
