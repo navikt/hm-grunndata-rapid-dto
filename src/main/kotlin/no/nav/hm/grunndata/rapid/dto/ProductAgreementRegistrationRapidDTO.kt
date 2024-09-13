@@ -5,6 +5,7 @@ import java.util.*
 
 class ProductAgreementRegistrationRapidDTO(
     override val id: UUID,
+    override val partitionKey: String = id.toString(),
     val productId: UUID?=null,
     val title: String,
     val supplierId: UUID,
