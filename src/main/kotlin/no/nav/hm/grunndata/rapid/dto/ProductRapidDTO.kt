@@ -113,6 +113,6 @@ data class Attributes(
     val hasTender: Boolean? = null,
 )
 
-data class AlternativeFor(val hmsArtNr: Set<String> = emptySet())
+data class AlternativeFor(val hmsArtNrs: Set<String> = emptySet())
 
 data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())
