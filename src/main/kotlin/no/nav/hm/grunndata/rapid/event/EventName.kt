@@ -30,5 +30,6 @@ class EventName {
         const val registeredNewsV1 = "${RapidApp.grunndata_register}-news-registered-v1" // send by REGISTER when news change in register
         const val importedProductV1 = "${RapidApp.grunndata_import}-product-imported-v1" // send by IMPORT when product got imported
         const val importedSeriesV1 = "${RapidApp.grunndata_import}-series-imported-v1" // send by IMPORT when series got importeed
+        const val registeredCatalogfileV1 = "${RapidApp.grunndata_register}-catalogfile-registered-v1" // send by REGISTER when new catalogfile has been imported in register
     }
 }
