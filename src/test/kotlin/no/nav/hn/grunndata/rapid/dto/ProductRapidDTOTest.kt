@@ -36,7 +36,7 @@ class ProductRapidDTOTest {
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = setOf(seriesId), productIds = setOf(productId))
+                compatibleWith = CompatibleWith(seriesIds = setOf(seriesId), productIds = setOf(productId))
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",

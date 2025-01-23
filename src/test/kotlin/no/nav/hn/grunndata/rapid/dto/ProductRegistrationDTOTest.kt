@@ -37,7 +37,7 @@ class ProductRegistrationDTOTest {
             attributes = Attributes(
                 shortdescription = "En kort beskrivelse av produktet",
                 text = "En lang beskrivelse av produktet",
-                compatibleWidth = CompatibleWith(seriesIds = setOf(uuid))
+                compatibleWith = CompatibleWith(seriesIds = setOf(uuid))
             ),
             hmsArtNr = "111",
             identifier = "hmdb-111",

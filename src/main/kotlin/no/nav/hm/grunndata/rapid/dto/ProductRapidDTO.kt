@@ -97,7 +97,7 @@ data class PakrevdGodkjenningskurs (
 
 data class Attributes(
     val manufacturer: String? = null,
-    val compatibleWidth: CompatibleWith? = null,
+    val compatibleWith: CompatibleWith? = null,
     val alternativeFor: AlternativeFor? = null,
     val keywords: List<String>? = null,
     val series: String? = null,
