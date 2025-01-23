@@ -17,5 +17,5 @@ data class CatalogFileRapidDTO(
 ): RapidDTO
 
 enum class CatalogFileStatus {
-    PENDING, PERSISTED, ERROR, DONE  // all accessories in catalog has been processed
+    PENDING, ERROR, DONE
 }

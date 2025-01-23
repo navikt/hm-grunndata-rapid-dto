@@ -44,8 +44,8 @@
     "isoCategory" : "12001314",
     "accessory" : false,
     "sparePart" : true,
-    "seriesUUID" : "a73bbaac-d5e2-4efa-9d67-c7b3372bb914",
-    "seriesId" : "a73bbaac-d5e2-4efa-9d67-c7b3372bb914",
+    "seriesUUID" : "b00b9fad-b30b-48e8-989a-42195c476e56",
+    "seriesId" : "b00b9fad-b30b-48e8-989a-42195c476e56",
     "techData" : [ {
       "key" : "maksvekt",
       "value" : "120",
@@ -78,6 +78,6 @@
     "createdBy" : "REGISTER",
     "updatedBy" : "REGISTER"
   },
-  "seriesId" : "a73bbaac-d5e2-4efa-9d67-c7b3372bb914",
+  "seriesId" : "b00b9fad-b30b-48e8-989a-42195c476e56",
   "version" : 1
 }
