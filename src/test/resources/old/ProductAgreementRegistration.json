@@ -1,5 +1,6 @@
 {
   "id" : "a03629d9-0c33-48b8-b997-fe940a153718",
+  "partitionKey" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "productId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "title" : "beskrivelse av produktet",
   "supplierId" : "a03629d9-0c33-48b8-b997-fe940a153718",
@@ -8,6 +9,7 @@
   "agreementId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "reference" : "AV-142",
   "post" : 1,
+  "postId" : "66c657c9-90e0-4f92-afa3-33ddcf46eacf",
   "rank" : 1,
   "status" : "ACTIVE",
   "createdBy" : "REGISTER",
@@ -15,6 +17,5 @@
   "created" : "+999999999-12-31T23:59:59.999999999",
   "updated" : "+999999999-12-31T23:59:59.999999999",
   "published" : "+999999999-12-31T23:59:59.999999999",
-  "expired" : "+999999999-12-31T23:59:59.999999999",
-  "partitionKey" : "a03629d9-0c33-48b8-b997-fe940a153718"
+  "expired" : "+999999999-12-31T23:59:59.999999999"
 }

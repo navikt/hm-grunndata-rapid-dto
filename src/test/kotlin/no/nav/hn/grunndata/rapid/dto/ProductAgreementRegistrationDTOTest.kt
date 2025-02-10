@@ -13,6 +13,7 @@ class ProductAgreementRegistrationDTOTest {
     @Test
     fun productAgreementRegistrationTest() {
         val uuid = UUID.fromString("a03629d9-0c33-48b8-b997-fe940a153718")
+        val postId = UUID.randomUUID()
         val productAgreementRapidDTO = ProductAgreementRegistrationRapidDTO(
             id = uuid,
             productId = uuid,
@@ -29,7 +30,8 @@ class ProductAgreementRegistrationDTOTest {
             created = LocalDateTime.MAX,
             updated = LocalDateTime.MAX,
             published = LocalDateTime.MAX,
-            expired = LocalDateTime.MAX
+            expired = LocalDateTime.MAX,
+            postId = postId
         )
 
         //Serialize the object to a file
