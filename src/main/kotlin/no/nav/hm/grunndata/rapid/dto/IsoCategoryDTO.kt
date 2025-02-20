@@ -19,5 +19,6 @@ data class IsoCategoryDTO(
     val showTech: Boolean = true,
     val allowMulti: Boolean = true,
     val created: LocalDateTime = LocalDateTime.now(),
-    val updated: LocalDateTime = LocalDateTime.now()
+    val updated: LocalDateTime = LocalDateTime.now(),
+    val searchWords: List<String> = emptyList()
 )
