@@ -5,11 +5,11 @@ import java.io.FileOutputStream
 
 
 val jvmTarget = "17"
-val junitJupiterVersion = "5.9.2"
+val junitJupiterVersion = "5.12.0"
 val mockkVersion = "1.13.2"
 val kotestVersion = "5.5.5"
-val logbackClassicVersion = "1.4.12"
-val jacksonVersion = "2.15.1"
+val logbackClassicVersion = "1.5.16"
+val jacksonVersion = "2.18.2"
 
 group = "no.nav.hm.grunndata"
 version = properties["version"] ?: "local-build"
@@ -17,6 +17,7 @@ version = properties["version"] ?: "local-build"
 plugins {
     kotlin("jvm") version "1.9.21"
     kotlin("kapt") version "1.9.21"
+    id("com.github.ben-manes.versions") version "0.47.0"
     id("java")
     id("maven-publish")
 }
