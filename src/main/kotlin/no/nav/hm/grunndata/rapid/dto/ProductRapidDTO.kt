@@ -18,6 +18,7 @@ data class ProductRapidDTO(
     val isoCategory: String,
     val accessory: Boolean = false,
     val sparePart: Boolean = false,
+    val main: Boolean = (accessory || sparePart).not(),
     val seriesUUID: UUID? = null,
     @Deprecated("Use seriesUUID instead")
     val seriesId: String? = id.toString(),
