@@ -112,6 +112,8 @@ data class Attributes(
     val produkttype: Produkttype? = null,
     val tenderId: String? = null,
     val hasTender: Boolean? = null,
+    val egnetForKommunalTekniker: Boolean? = null,
+    val egnetForBrukerpass: Boolean? = null,
 )
 
 data class AlternativeFor(val hmsArtNrs: Set<String> = emptySet())
