@@ -9,7 +9,7 @@
   "agreementId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "reference" : "AV-142",
   "post" : 1,
-  "postId" : "bbb6d96b-d15a-408f-b4ac-a8db2ca070a5",
+  "postId" : "46818e30-bf64-4ab5-adb0-b15096068ba1",
   "rank" : 1,
   "status" : "ACTIVE",
   "createdBy" : "REGISTER",
@@ -17,5 +17,8 @@
   "created" : "+999999999-12-31T23:59:59.999999999",
   "updated" : "+999999999-12-31T23:59:59.999999999",
   "published" : "+999999999-12-31T23:59:59.999999999",
-  "expired" : "+999999999-12-31T23:59:59.999999999"
+  "expired" : "+999999999-12-31T23:59:59.999999999",
+  "accessory" : false,
+  "sparePart" : false,
+  "mainProduct" : true
 }

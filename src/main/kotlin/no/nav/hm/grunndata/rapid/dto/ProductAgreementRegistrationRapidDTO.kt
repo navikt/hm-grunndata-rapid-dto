@@ -22,7 +22,10 @@ class ProductAgreementRegistrationRapidDTO(
     val created: LocalDateTime,
     val updated: LocalDateTime,
     val published: LocalDateTime,
-    val expired: LocalDateTime
+    val expired: LocalDateTime,
+    val accessory: Boolean = false,
+    val sparePart: Boolean =false,
+    val mainProduct: Boolean = true,
 ): RapidDTO
 
 enum class ProductAgreementStatus {
