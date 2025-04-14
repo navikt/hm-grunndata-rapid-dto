@@ -16,7 +16,7 @@
   "title" : "Dette er produkt 1",
   "articleName" : "Dette er produkt 1 med og med",
   "attributes" : {
-    "compatibleWidth" : {
+    "compatibleWith" : {
       "seriesIds" : [ "0e24a1c0-0f57-494a-b5d7-af735356ee4f" ],
       "productIds" : [ "2238e5d7-09a3-4a90-9a33-7010f26e5793" ]
     },
@@ -30,6 +30,7 @@
   "isoCategory" : "12001314",
   "accessory" : false,
   "sparePart" : true,
+  "mainProduct" : true,
   "seriesUUID" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
   "seriesId" : "series-123",
   "techData" : [ {

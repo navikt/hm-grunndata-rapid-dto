@@ -30,7 +30,7 @@
     "title" : "Dette er produkt 1",
     "articleName" : "Dette er produkt 1 med og med",
     "attributes" : {
-      "compatibleWidth" : {
+      "compatibleWith" : {
         "seriesIds" : [ "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2" ],
         "productIds" : [ ]
       },
@@ -44,8 +44,9 @@
     "isoCategory" : "12001314",
     "accessory" : false,
     "sparePart" : true,
-    "seriesUUID" : "3f92acf4-1198-402e-b95d-6efdae9a7d3a",
-    "seriesId" : "3f92acf4-1198-402e-b95d-6efdae9a7d3a",
+    "mainProduct" : true,
+    "seriesUUID" : "d2431a69-fc9c-4cf2-a729-887813a2db64",
+    "seriesId" : "d2431a69-fc9c-4cf2-a729-887813a2db64",
     "techData" : [ {
       "key" : "maksvekt",
       "value" : "120",
@@ -78,6 +79,6 @@
     "createdBy" : "REGISTER",
     "updatedBy" : "REGISTER"
   },
-  "seriesId" : "3f92acf4-1198-402e-b95d-6efdae9a7d3a",
+  "seriesId" : "d2431a69-fc9c-4cf2-a729-887813a2db64",
   "version" : 1
 }

@@ -32,7 +32,8 @@
     "attributes" : {
       "compatibleWith" : {
         "seriesIds" : [ "a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2" ],
-        "productIds" : [ ]
+        "productIds" : [ ],
+        "connectedBy" : ""
       },
       "shortdescription" : "En kort beskrivelse av produktet",
       "text" : "En lang beskrivelse av produktet"
@@ -45,8 +46,8 @@
     "accessory" : false,
     "sparePart" : true,
     "mainProduct" : true,
-    "seriesUUID" : "d2431a69-fc9c-4cf2-a729-887813a2db64",
-    "seriesId" : "d2431a69-fc9c-4cf2-a729-887813a2db64",
+    "seriesUUID" : "a1d6bc34-cc70-437e-9521-3d5813f4c7e2",
+    "seriesId" : "a1d6bc34-cc70-437e-9521-3d5813f4c7e2",
     "techData" : [ {
       "key" : "maksvekt",
       "value" : "120",
@@ -79,6 +80,6 @@
     "createdBy" : "REGISTER",
     "updatedBy" : "REGISTER"
   },
-  "seriesId" : "d2431a69-fc9c-4cf2-a729-887813a2db64",
+  "seriesId" : "a1d6bc34-cc70-437e-9521-3d5813f4c7e2",
   "version" : 1
 }

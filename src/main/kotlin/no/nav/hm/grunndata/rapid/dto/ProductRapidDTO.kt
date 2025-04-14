@@ -118,4 +118,4 @@ data class Attributes(
 
 data class AlternativeFor(val hmsArtNrs: Set<String> = emptySet())
 
-data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())
+data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet(), val connectedBy: String = "")
