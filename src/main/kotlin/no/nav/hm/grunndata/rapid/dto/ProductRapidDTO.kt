@@ -118,4 +118,11 @@ data class Attributes(
 
 data class AlternativeFor(val hmsArtNrs: Set<String> = emptySet())
 
-data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet(), val connectedBy: String = "")
+data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet(), val connectedBy: String = COMPATI) {
+    companion object {
+        const val COMPATI = "compati"
+        const val MANUAL = "manual"
+    }
+}
+
+
