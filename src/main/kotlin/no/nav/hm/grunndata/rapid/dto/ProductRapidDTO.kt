@@ -120,7 +120,8 @@ data class AlternativeFor(val hmsArtNrs: Set<String> = emptySet())
 
 data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet(), val connectedBy: String = COMPATI) {
     companion object {
-        const val COMPATI = "compati"
+        const val COMPATI = "compati" // old style
+        const val COMPATIAI = "compatiai"
         const val MANUAL = "manual"
     }
 }
