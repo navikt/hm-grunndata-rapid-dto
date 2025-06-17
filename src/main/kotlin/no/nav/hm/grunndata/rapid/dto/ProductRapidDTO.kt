@@ -30,8 +30,8 @@ data class ProductRapidDTO(
     val published: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = updated.plusYears(20),
     @Deprecated("Use agreements instead")
-    val agreementInfo: ProductAgreement?=null,
-    val agreements: List<ProductAgreement> = emptyList(),
+    val agreementInfo: AgreementInfo?=null,
+    val agreements: List<AgreementInfo> = emptyList(),
     val hasAgreement: Boolean = agreements.isNotEmpty(),
     val createdBy: String,
     val updatedBy: String
@@ -43,7 +43,7 @@ data class TechData (
     val unit:   String
 )
 
-data class ProductAgreement (
+data class AgreementInfo (
     val id: UUID,
     val identifier: String?=null,
     val title: String?=null,

@@ -3,7 +3,7 @@ package no.nav.hn.grunndata.rapid.dto
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
 import no.nav.hm.grunndata.rapid.dto.AdminStatus
-import no.nav.hm.grunndata.rapid.dto.ProductAgreement
+import no.nav.hm.grunndata.rapid.dto.AgreementInfo
 import no.nav.hm.grunndata.rapid.dto.Attributes
 import no.nav.hm.grunndata.rapid.dto.CompatibleWith
 import no.nav.hm.grunndata.rapid.dto.DraftStatus
@@ -24,7 +24,7 @@ class ProductRegistrationDTOTest {
     @Test
     fun testProductRegistrationDTO() {
         val uuid = UUID.fromString("a42185cd-d7a2-496a-8d8a-f3d4a02bc9d2")
-        val seriesId = UUID.randomUUID()
+        val seriesId = UUID.fromString("b6663764-acab-466c-b8b1-d69195b7f881")
         val productDTO = ProductRapidDTO(
             id = uuid,
             created = LocalDateTime.MAX,
@@ -57,7 +57,7 @@ class ProductRegistrationDTOTest {
                     updated = LocalDateTime.MAX
                 )
             ),
-            agreementInfo = ProductAgreement(
+            agreementInfo = AgreementInfo(
                 id = uuid,
                 identifier = "hmdbid-1",
                 rank = 1,

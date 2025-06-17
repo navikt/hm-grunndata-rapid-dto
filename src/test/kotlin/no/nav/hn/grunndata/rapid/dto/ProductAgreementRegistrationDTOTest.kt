@@ -13,7 +13,7 @@ class ProductAgreementRegistrationDTOTest {
     @Test
     fun productAgreementRegistrationTest() {
         val uuid = UUID.fromString("a03629d9-0c33-48b8-b997-fe940a153718")
-        val postId = UUID.randomUUID()
+        val postId = UUID.fromString("37d81fa9-8407-46b8-938c-e9b1408fbe10")
         val productAgreementRapidDTO = ProductAgreementRegistrationRapidDTO(
             id = uuid,
             productId = uuid,
