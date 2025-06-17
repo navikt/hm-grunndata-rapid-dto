@@ -30,8 +30,8 @@ data class ProductRapidDTO(
     val published: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = updated.plusYears(20),
     @Deprecated("Use agreements instead")
-    val agreementInfo: AgreementInfo?=null,
-    val agreements: List<AgreementInfo> = emptyList(),
+    val agreementInfo: ProductAgreement?=null,
+    val agreements: List<ProductAgreement> = emptyList(),
     val hasAgreement: Boolean = agreements.isNotEmpty(),
     val createdBy: String,
     val updatedBy: String
@@ -43,7 +43,7 @@ data class TechData (
     val unit:   String
 )
 
-data class AgreementInfo (
+data class ProductAgreement (
     val id: UUID,
     val identifier: String?=null,
     val title: String?=null,
@@ -56,7 +56,11 @@ data class AgreementInfo (
     val reference: String,
     val expired: LocalDateTime,
     val published: LocalDateTime?=null,
-    val status: ProductAgreementStatus = ProductAgreementStatus.ACTIVE
+    val status: ProductAgreementStatus = ProductAgreementStatus.ACTIVE,
+    val mainProduct: Boolean = true,
+    val accessory: Boolean = false,
+    val sparePart: Boolean = false,
+    val articleName: String = ""
 )
 
 enum class ProductStatus {

@@ -3,7 +3,7 @@ package no.nav.hn.grunndata.rapid.dto
 
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.AgreementInfo
+import no.nav.hm.grunndata.rapid.dto.ProductAgreement
 import no.nav.hm.grunndata.rapid.dto.Attributes
 import no.nav.hm.grunndata.rapid.dto.CompatibleWith
 import no.nav.hm.grunndata.rapid.dto.MediaInfo
@@ -56,7 +56,7 @@ class ProductRapidDTOTest {
                     updated = LocalDateTime.MAX
                 )
             ),
-            agreementInfo = AgreementInfo(
+            agreementInfo = ProductAgreement(
                 id = uuid,
                 identifier = "hmdbid-1",
                 rank = 1,
@@ -66,7 +66,7 @@ class ProductRapidDTOTest {
                 status = ProductAgreementStatus.ACTIVE
             ),
             agreements = listOf(
-                AgreementInfo(
+                ProductAgreement(
                     id = uuid,
                     identifier = "hmdbid-1",
                     rank = 1,
@@ -75,7 +75,7 @@ class ProductRapidDTOTest {
                     expired = LocalDateTime.MAX,
                     status = ProductAgreementStatus.ACTIVE
                 ),
-                AgreementInfo(
+                ProductAgreement(
                     id = uuid,
                     identifier = "hmdbid-1",
                     rank = 2,

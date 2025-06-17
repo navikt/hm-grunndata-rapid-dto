@@ -59,7 +59,11 @@
     "postNr" : 1,
     "reference" : "AV-142",
     "expired" : "+999999999-12-31T23:59:59.999999999",
-    "status" : "ACTIVE"
+    "status" : "ACTIVE",
+    "mainProduct" : true,
+    "accessory" : false,
+    "sparePart" : false,
+    "articleName" : ""
   },
   "agreements" : [ {
     "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
@@ -68,7 +72,11 @@
     "postNr" : 1,
     "reference" : "AV-142",
     "expired" : "+999999999-12-31T23:59:59.999999999",
-    "status" : "ACTIVE"
+    "status" : "ACTIVE",
+    "mainProduct" : true,
+    "accessory" : false,
+    "sparePart" : false,
+    "articleName" : ""
   }, {
     "id" : "0d527ba0-d71e-4df5-8b1c-62e6f297e51e",
     "identifier" : "hmdbid-1",
@@ -76,7 +84,11 @@
     "postNr" : 2,
     "reference" : "AV-143",
     "expired" : "+999999999-12-31T23:59:59.999999999",
-    "status" : "ACTIVE"
+    "status" : "ACTIVE",
+    "mainProduct" : true,
+    "accessory" : false,
+    "sparePart" : false,
+    "articleName" : ""
   } ],
   "hasAgreement" : true,
   "createdBy" : "REGISTER",

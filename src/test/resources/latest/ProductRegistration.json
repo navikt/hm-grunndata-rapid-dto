@@ -46,8 +46,8 @@
     "accessory" : false,
     "sparePart" : true,
     "mainProduct" : true,
-    "seriesUUID" : "0f5f302c-812f-4c12-be6e-81342065c8cc",
-    "seriesId" : "0f5f302c-812f-4c12-be6e-81342065c8cc",
+    "seriesUUID" : "b6663764-acab-466c-b8b1-d69195b7f881",
+    "seriesId" : "b6663764-acab-466c-b8b1-d69195b7f881",
     "techData" : [ {
       "key" : "maksvekt",
       "value" : "120",
@@ -73,13 +73,17 @@
       "postNr" : 1,
       "reference" : "AV-142",
       "expired" : "+999999999-12-31T23:59:59.999999999",
-      "status" : "ACTIVE"
+      "status" : "ACTIVE",
+      "mainProduct" : true,
+      "accessory" : false,
+      "sparePart" : false,
+      "articleName" : ""
     },
     "agreements" : [ ],
     "hasAgreement" : false,
     "createdBy" : "REGISTER",
     "updatedBy" : "REGISTER"
   },
-  "seriesId" : "0f5f302c-812f-4c12-be6e-81342065c8cc",
+  "seriesId" : "b6663764-acab-466c-b8b1-d69195b7f881",
   "version" : 1
 }
