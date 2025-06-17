@@ -18,6 +18,7 @@ class ProductAgreementRegistrationDTOTest {
             id = uuid,
             productId = uuid,
             title = "beskrivelse av produktet",
+            articleName = "Artikkelnavn",
             supplierId = uuid,
             supplierRef = "eksternref-1",
             hmsArtNr = "111",

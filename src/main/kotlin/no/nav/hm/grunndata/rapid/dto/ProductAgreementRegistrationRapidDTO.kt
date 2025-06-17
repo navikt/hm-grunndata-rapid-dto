@@ -8,6 +8,7 @@ class ProductAgreementRegistrationRapidDTO(
     override val partitionKey: String = id.toString(),
     val productId: UUID?=null,
     val title: String,
+    val articleName: String="",
     val supplierId: UUID,
     val supplierRef: String,
     val hmsArtNr: String?,

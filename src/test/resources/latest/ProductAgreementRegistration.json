@@ -3,6 +3,7 @@
   "partitionKey" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "productId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "title" : "beskrivelse av produktet",
+  "articleName" : "Artikkelnavn",
   "supplierId" : "a03629d9-0c33-48b8-b997-fe940a153718",
   "supplierRef" : "eksternref-1",
   "hmsArtNr" : "111",
