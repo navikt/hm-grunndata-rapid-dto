@@ -18,6 +18,7 @@
     "text" : "En lang beskrivelse av avtalen",
     "status" : "ACTIVE",
     "reference" : "1234-1",
+    "agreementKey" : "",
     "published" : "+999999999-12-31T23:59:59.999999999",
     "expired" : "+999999999-12-31T23:59:59.999999999",
     "attachments" : [ {

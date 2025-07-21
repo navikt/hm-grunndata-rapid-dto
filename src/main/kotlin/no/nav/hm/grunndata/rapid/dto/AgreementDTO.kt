@@ -12,6 +12,7 @@ data class AgreementDTO(
     val text: String?,
     val status: AgreementStatus = AgreementStatus.ACTIVE,
     val reference: String,
+    val agreementKey: String = "",
     val published: LocalDateTime = LocalDateTime.now(),
     val expired: LocalDateTime = LocalDateTime.now(),
     val attachments: List<AgreementAttachment> = emptyList(),
