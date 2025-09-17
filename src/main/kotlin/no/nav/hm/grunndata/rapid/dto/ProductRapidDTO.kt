@@ -104,6 +104,7 @@ data class Attributes(
     val manufacturer: String? = null,
     val compatibleWith: CompatibleWith? = null,
     val alternativeFor: AlternativeFor? = null,
+    val worksWith: WorksWith? = null,
     val keywords: List<String>? = null,
     val series: String? = null,
     val shortdescription: String? = null,
@@ -129,5 +130,7 @@ data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds
         const val MANUAL = "manual"
     }
 }
+
+data class WorksWith(val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())
 
 
