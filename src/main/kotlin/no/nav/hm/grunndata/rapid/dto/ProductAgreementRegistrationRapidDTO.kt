@@ -11,7 +11,8 @@ class ProductAgreementRegistrationRapidDTO(
     val articleName: String="",
     val supplierId: UUID,
     val supplierRef: String,
-    val hmsArtNr: String?,
+    @Deprecated("Use productId to join with product table to get hmsArtNr")
+    val hmsArtNr: String?=null,
     val agreementId: UUID,
     val reference: String,
     val post: Int,
