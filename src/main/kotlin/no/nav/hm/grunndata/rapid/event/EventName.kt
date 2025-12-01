@@ -7,11 +7,6 @@ package no.nav.hm.grunndata.rapid.event
 class EventName {
 
     companion object {
-        const val hmdbagreementsyncV1 = "${RapidApp.grunndata_db}-hmdb-agreement-sync-v1" // send agreement by GDB when sync from HMDB
-        const val hmdbsuppliersyncV1 = "${RapidApp.grunndata_db}-hmdb-supplier-sync-v1" // send supplier by GDB when sync from HMDB
-        const val hmdbproductsyncV1 = "${RapidApp.grunndata_db}-hmdb-product-sync-v1" // send product by GDB when sync from HMDB
-        const val hmdbseriessyncV1 = "${RapidApp.grunndata_db}-hmdb-series-sync-v1" // send series by GDB when sync from HMDB"
-        const val hmdbnewsyncV1 = "${RapidApp.grunndata_db}-hmdb-news-sync-v1" // send news by GDB when sync from HMDB
         const val expiredAgreementV1 = "${RapidApp.grunndata_db}-agreement-expired-v1" // send by GDB when agreement has expired
         const val expiredProductV1 = "${RapidApp.grunndata_db}-product-expired-v1" // // send by GDB when product has expired
         const val syncedRegisterProductV1  = "${RapidApp.grunndata_db}-register-product-synced-v1" // send by GDB when synced product with register
@@ -31,5 +26,6 @@ class EventName {
         const val importedProductV1 = "${RapidApp.grunndata_import}-product-imported-v1" // send by IMPORT when product got imported
         const val importedSeriesV1 = "${RapidApp.grunndata_import}-series-imported-v1" // send by IMPORT when series got importeed
         const val registeredCatalogfileV1 = "${RapidApp.grunndata_register}-catalogfile-registered-v1" // send by REGISTER when new catalogfile has been imported in register
+        const val registeredServiceJobV1 = "${RapidApp.grunndata_register}-servicejob-registered-v1" // send by REGISTER when service job change in register
     }
 }

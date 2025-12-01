@@ -1,0 +1,26 @@
+{
+  "id" : "b8d6f44f-5b11-47e2-94dd-288a46c2fee1",
+  "partitionKey" : "b8d6f44f-5b11-47e2-94dd-288a46c2fee1",
+  "title" : "Repair job for wheelchair",
+  "supplierId" : "c1a2b3c4-d5e6-47f8-90ab-1c2d3e4f5a6b",
+  "supplierRef" : "SUPP-12345",
+  "hmsNr" : "123456",
+  "isoCategory" : "16021501",
+  "published" : "-999999999-01-01T00:00:00",
+  "expired" : "+999999999-12-31T23:59:59.999999999",
+  "updated" : "+999999999-12-31T23:59:59.999999999",
+  "draftStatus" : "DRAFT",
+  "status" : "ACTIVE",
+  "created" : "-999999999-01-01T00:00:00",
+  "updatedBy" : "REGISTER",
+  "createdBy" : "REGISTER",
+  "createdByUser" : "system",
+  "updatedByUser" : "system",
+  "attributes" : {
+    "keywords" : [ "repair", "wheelchair" ],
+    "url" : "https://example.com/repair-service",
+    "text" : "We provide repair services for wheelchairs."
+  },
+  "agreements" : [ ],
+  "version" : 0
+}
