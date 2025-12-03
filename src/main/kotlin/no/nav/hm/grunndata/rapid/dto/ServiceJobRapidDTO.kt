@@ -42,9 +42,6 @@ data class ServiceFor(
 )
 
 data class ServiceAgreementInfo(
-    val serviceId: UUID,
-    val supplierId: UUID,
-    val supplierRef: String? = null,
     val agreementId: UUID,
     val status: ServiceAgreementStatus = ServiceAgreementStatus.INACTIVE,
     val published: LocalDateTime,

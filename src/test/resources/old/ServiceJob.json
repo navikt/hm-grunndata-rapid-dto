@@ -21,6 +21,11 @@
     "url" : "https://example.com/repair-service",
     "text" : "We provide repair services for wheelchairs."
   },
-  "agreements" : [ ],
+  "agreements" : [ {
+    "agreementId" : "d4e5f6a7-b8c9-40d1-92ab-3c4d5e6f7a8b",
+    "status" : "ACTIVE",
+    "published" : "-999999999-01-01T00:00:00",
+    "expired" : "+999999999-12-31T23:59:59.999999999"
+  } ],
   "version" : 0
 }
