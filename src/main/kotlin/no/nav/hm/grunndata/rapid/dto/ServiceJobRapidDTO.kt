@@ -42,7 +42,6 @@ data class ServiceFor(
 )
 
 data class ServiceAgreementInfo(
-    val id: UUID,
     val serviceId: UUID,
     val supplierId: UUID,
     val supplierRef: String? = null,
