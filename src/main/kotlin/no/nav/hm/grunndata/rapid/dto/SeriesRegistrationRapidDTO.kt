@@ -25,7 +25,8 @@ data class SeriesRegistrationRapidDTO(
     val createdByUser: String,
     val createdByAdmin: Boolean = false,
     val count: Int = 0,
-    val version: Long? = 0L
+    val version: Long? = 0L,
+    val mainProduct: Boolean? = null
 ) : RapidDTO
 
 data class SeriesData(
