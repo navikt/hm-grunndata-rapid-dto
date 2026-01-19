@@ -37,6 +37,6 @@ data class SeriesData(
 data class SeriesAttributes(
     val keywords: Set<String>? = null,
     val url: String? = null,
-    val documentUrls: List<String>? = null,
+    val documentUrls: List<DocumentUrl>? = null,
     val compatibleWith: CompatibleWith? = null
 )

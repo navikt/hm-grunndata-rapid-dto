@@ -131,6 +131,8 @@ data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds
     }
 }
 
+data class DocumentUrl(val url: String, val title: String)
+
 data class WorksWith(val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())
 
 
