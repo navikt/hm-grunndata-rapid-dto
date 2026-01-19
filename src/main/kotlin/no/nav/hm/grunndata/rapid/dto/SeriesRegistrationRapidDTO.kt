@@ -31,11 +31,12 @@ data class SeriesRegistrationRapidDTO(
 
 data class SeriesData(
     val media: Set<MediaInfo> = emptySet(),
-    val attributes: SeriesAttributes = SeriesAttributes()
+    val attributes: SeriesAttributes = SeriesAttributes(),
 )
 
 data class SeriesAttributes(
     val keywords: Set<String>? = null,
     val url: String? = null,
+    val documentUrls: List<String>? = null,
     val compatibleWith: CompatibleWith? = null
 )
