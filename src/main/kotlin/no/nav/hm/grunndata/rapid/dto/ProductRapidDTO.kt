@@ -110,6 +110,7 @@ data class Attributes(
     val shortdescription: String? = null,
     val text: String? = null,
     val url: String? = null,
+    val documentUrls: List<DocumentUrl>? = null,
     val bestillingsordning: Boolean? = null,
     val digitalSoknad: Boolean? = null,
     val sortimentKategori: String? = null,
