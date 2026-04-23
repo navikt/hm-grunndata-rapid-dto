@@ -1,6 +1,5 @@
 package no.nav.hm.grunndata.rapid.dto
 
-import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
 
@@ -28,7 +27,6 @@ enum class RegistrationStatus {
 }
 
 enum class AdminStatus {
-    @JsonEnumDefaultValue
     PENDING,
     APPROVED,
     REJECTED

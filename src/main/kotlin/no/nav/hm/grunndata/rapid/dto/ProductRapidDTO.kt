@@ -1,6 +1,5 @@
 package no.nav.hm.grunndata.rapid.dto
 
-import com.fasterxml.jackson.annotation.JsonEnumDefaultValue
 import java.time.LocalDateTime
 import java.util.*
 
@@ -65,7 +64,6 @@ data class AgreementInfo (
 
 enum class ProductStatus {
     ACTIVE,
-    @JsonEnumDefaultValue
     INACTIVE,
     DELETED
 }
@@ -75,7 +73,6 @@ enum class MediaSourceType {
     REGISTER,
     EXTERNALURL,
     IMPORT,
-    @JsonEnumDefaultValue
     UNKNOWN
 }
 
@@ -84,7 +81,6 @@ enum class MediaType {
     IMAGE,
     VIDEO,
     XLS,
-    @JsonEnumDefaultValue
     OTHER
 }
 
@@ -135,5 +131,3 @@ data class CompatibleWith (val seriesIds: Set<UUID> = emptySet(), val productIds
 data class DocumentUrl(val url: String, val title: String)
 
 data class WorksWith(val seriesIds: Set<UUID> = emptySet(), val productIds: Set<UUID> = emptySet())
-
-
