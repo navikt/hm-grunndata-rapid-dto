@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":hm-grunndata-rapid-dto-jackson"))
+    implementation(project(":hm-grunndata-rapid-dto-core"))
     testImplementation("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonVersion}")
     testImplementation("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
@@ -41,7 +41,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
 
             pom {
-                name.set("hm-grunndata-rapid-dto")
+                name.set("hm-grunndata-rapid-dto-jackson")
                 description.set("hm grunndata rapid dto lib")
                 url.set("https://github.com/navikt/hm-grunndata-rapid-dto")
 

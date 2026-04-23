@@ -6,7 +6,6 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":hm-grunndata-rapid-dto"))
 }
 
 micronaut {
@@ -36,7 +35,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
 
             pom {
-                name.set("hm-grunndata-rapid-dto")
+                name.set("hm-grunndata-rapid-dto-core")
                 description.set("hm grunndata rapid dto lib")
                 url.set("https://github.com/navikt/hm-grunndata-rapid-dto")
 
