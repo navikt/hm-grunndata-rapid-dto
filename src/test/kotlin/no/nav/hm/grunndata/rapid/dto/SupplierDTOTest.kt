@@ -1,4 +1,4 @@
-package no.nav.hn.grunndata.rapid.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import no.nav.hm.grunndata.rapid.dto.SupplierDTO
 import no.nav.hm.grunndata.rapid.dto.SupplierInfo

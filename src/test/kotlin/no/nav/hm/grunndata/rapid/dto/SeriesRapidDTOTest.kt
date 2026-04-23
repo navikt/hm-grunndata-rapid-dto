@@ -1,8 +1,6 @@
-package no.nav.hn.grunndata.rapid.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.SeriesRapidDTO
-import no.nav.hm.grunndata.rapid.dto.SeriesStatus
 import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime

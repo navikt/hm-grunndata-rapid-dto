@@ -1,20 +1,11 @@
-package no.nav.hn.grunndata.rapid.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.AdminStatus
-import no.nav.hm.grunndata.rapid.dto.DraftStatus
-import no.nav.hm.grunndata.rapid.dto.MediaInfo
-import no.nav.hm.grunndata.rapid.dto.MediaSourceType
-import no.nav.hm.grunndata.rapid.dto.SeriesAttributes
-import no.nav.hm.grunndata.rapid.dto.SeriesData
-import no.nav.hm.grunndata.rapid.dto.SeriesRegistrationRapidDTO
-import no.nav.hm.grunndata.rapid.dto.SeriesStatus
 import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime
 import java.util.*
-import no.nav.hm.grunndata.rapid.dto.CompatibleWith
 
 class SeriesRegistrationDTOTest {
 

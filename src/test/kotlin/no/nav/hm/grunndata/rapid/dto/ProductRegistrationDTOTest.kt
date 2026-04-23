@@ -1,19 +1,7 @@
-package no.nav.hn.grunndata.rapid.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.AdminStatus
-import no.nav.hm.grunndata.rapid.dto.AgreementInfo
-import no.nav.hm.grunndata.rapid.dto.Attributes
-import no.nav.hm.grunndata.rapid.dto.CompatibleWith
-import no.nav.hm.grunndata.rapid.dto.DraftStatus
-import no.nav.hm.grunndata.rapid.dto.MediaInfo
-import no.nav.hm.grunndata.rapid.dto.MediaSourceType
-import no.nav.hm.grunndata.rapid.dto.ProductAgreementStatus
-import no.nav.hm.grunndata.rapid.dto.ProductRapidDTO
-import no.nav.hm.grunndata.rapid.dto.ProductRegistrationRapidDTO
-import no.nav.hm.grunndata.rapid.dto.RegistrationStatus
-import no.nav.hm.grunndata.rapid.dto.TechData
 import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime

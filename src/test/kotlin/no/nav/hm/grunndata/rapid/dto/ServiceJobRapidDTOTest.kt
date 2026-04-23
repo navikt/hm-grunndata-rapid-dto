@@ -1,10 +1,6 @@
-package no.nav.hn.grunndata.rapid.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.ServiceAgreementInfo
-import no.nav.hm.grunndata.rapid.dto.ServiceAgreementStatus
-import no.nav.hm.grunndata.rapid.dto.ServiceAttributes
-import no.nav.hm.grunndata.rapid.dto.ServiceJobRapidDTO
 import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime

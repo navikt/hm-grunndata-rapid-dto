@@ -1,9 +1,7 @@
-package no.nav.hn.grunndata.rapid.dto
+package no.nav.hm.grunndata.rapid.dto
 
 import io.kotest.matchers.nulls.shouldNotBeNull
 import io.kotest.matchers.shouldBe
-import no.nav.hm.grunndata.rapid.dto.ProductAgreementRegistrationRapidDTO
-import no.nav.hm.grunndata.rapid.dto.ProductAgreementStatus
 import org.junit.jupiter.api.Test
 import java.io.FileOutputStream
 import java.time.LocalDateTime
