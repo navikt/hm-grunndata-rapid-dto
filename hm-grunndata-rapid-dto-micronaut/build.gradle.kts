@@ -6,7 +6,9 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":hm-grunndata-rapid-dto-core"))
+    implementation(project(":hm-grunndata-rapid-dto"))
+    ksp("io.micronaut.serde:micronaut-serde-processor")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
 }
 
 micronaut {

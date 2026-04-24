@@ -35,7 +35,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
 
             pom {
-                name.set("hm-grunndata-rapid-dto-core")
+                name.set("hm-grunndata-rapid-dto")
                 description.set("hm grunndata rapid dto lib")
                 url.set("https://github.com/navikt/hm-grunndata-rapid-dto")
 

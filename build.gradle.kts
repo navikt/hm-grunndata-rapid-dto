@@ -69,6 +69,8 @@ subprojects {
 
     tasks.register("generateVersionProp") {
         doLast {
+            val outputFile = File("$buildDir/resources/main/version.properties")
+            outputFile.parentFile.mkdirs()
             val props = Properties()
             props["version"] = project.version.toString()
             val ous = FileOutputStream(File("$buildDir/resources/main/version.properties"))

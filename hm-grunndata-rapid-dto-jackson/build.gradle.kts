@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":hm-grunndata-rapid-dto-core"))
+    implementation(project(":hm-grunndata-rapid-dto"))
     testImplementation("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonVersion}")
     testImplementation("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
