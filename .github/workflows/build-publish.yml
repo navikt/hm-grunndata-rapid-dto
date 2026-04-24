@@ -30,7 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: publish
-        run: ./gradlew -Pversion="$VERSION_TAG" clean build generateVersionProp publish
+        run: ./gradlew -Pversion="$VERSION_TAG" clean generateVersionProp build publish
         env:
           ORG_GRADLE_PROJECT_githubUser: x-access-token
           ORG_GRADLE_PROJECT_githubPassword: ${{ secrets.GITHUB_TOKEN }}
