@@ -17,7 +17,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(false)
-        annotations("no.nav.hm.grunndata.rapid.dto.micronaut.*")
+        annotations("no.nav.hm.grunndata.rapid.dto.serde.*")
     }
 }
 
