@@ -8,6 +8,12 @@ plugins {
 dependencies {
 }
 
+tasks.processResources {
+    filesMatching("version.properties") {
+        expand("version" to project.version.toString())
+    }
+}
+
 micronaut {
     version.set(micronautVersion)
     testRuntime("netty")

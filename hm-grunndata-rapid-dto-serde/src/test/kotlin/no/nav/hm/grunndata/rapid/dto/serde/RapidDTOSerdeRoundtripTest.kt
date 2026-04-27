@@ -1,4 +1,4 @@
-package no.nav.hm.grunndata.rapid.dto.micronaut
+package no.nav.hm.grunndata.rapid.dto.serde
 
 import io.micronaut.serde.ObjectMapper
 import io.micronaut.serde.annotation.SerdeImport

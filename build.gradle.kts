@@ -1,8 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.io.FileOutputStream
-import java.util.Properties
+
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.1.21"
@@ -67,11 +66,6 @@ subprojects {
     }
 
 
-    tasks.processResources {
-        filesMatching("version.properties") {
-            expand("version" to project.version.toString())
-        }
-    }
 
     repositories {
         mavenLocal()
