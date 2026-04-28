@@ -1,10 +1,6 @@
 val micronautVersion="4.10.12"
 val jacksonVersion = "2.18.2"
 
-plugins {
-    id("io.micronaut.library") version "4.6.2"
-}
-
 dependencies {
     implementation(project(":hm-grunndata-rapid-dto"))
     testImplementation("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
@@ -12,16 +8,7 @@ dependencies {
     testImplementation("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
     testImplementation("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
     testImplementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}")
-}
-
-micronaut {
-    version.set(micronautVersion)
-    testRuntime("netty")
-    testRuntime("junit5")
-    processing {
-        incremental(false)
-        annotations("no.nav.hm.grunndata.rapid.dto.jackson.*")
-    }
+    testImplementation("io.github.classgraph:classgraph:4.8.179")
 }
 
 val githubUser: String? by project

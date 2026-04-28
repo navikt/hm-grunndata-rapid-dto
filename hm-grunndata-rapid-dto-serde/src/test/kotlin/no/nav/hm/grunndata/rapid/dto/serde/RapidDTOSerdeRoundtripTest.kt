@@ -28,12 +28,17 @@ class RapidDTOSerdeRoundtripTest(private val objectMapper: ObjectMapper) {
         }
 
     private fun importedTypes(): List<Class<*>> {
-        return RapidDTOSerdeImportConfig::class.java
-            .getAnnotationsByType(SerdeImport::class.java)
-            .map { it.value.java }
-            .filterNot { it.isInterface || Modifier.isAbstract(it.modifiers) }
-            .distinct()
-            .sortedBy { it.name }
+        return io.github.classgraph.ClassGraph()
+            .acceptPackages("no.nav.hm.grunndata.rapid.dto")
+            .enableClassInfo()
+            .scan()
+            .use { scan ->
+                scan.getAllClasses()
+                    .filter { it.packageName == "no.nav.hm.grunndata.rapid.dto" } // exact package only
+                    .filterNot { it.isInterface || it.isAbstract || it.name.contains('$') }
+                    .sortedBy { it.name }
+                    .map { it.loadClass() }
+            }
     }
 
     private fun sampleInstance(clazz: Class<*>, depth: Int = 0): Any {

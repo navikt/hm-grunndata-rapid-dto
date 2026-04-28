@@ -9,6 +9,7 @@ dependencies {
     implementation(project(":hm-grunndata-rapid-dto"))
     ksp("io.micronaut.serde:micronaut-serde-processor")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
+    testImplementation("io.github.classgraph:classgraph:4.8.179")
 }
 
 micronaut {
@@ -17,7 +18,9 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(false)
+        annotations("no.nav.hm.grunndata.rapid.dto.*")
         annotations("no.nav.hm.grunndata.rapid.dto.serde.*")
+
     }
 }
 

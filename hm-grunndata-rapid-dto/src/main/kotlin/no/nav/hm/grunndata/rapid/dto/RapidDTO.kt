@@ -7,6 +7,3 @@ interface RapidDTO {
     val partitionKey: String get() = id.toString()
 }
 
-val rapidDTOVersion = RapidDTO::class.java.classLoader.getResource("version.properties")!!
-.readText()
-.substringAfter("=").trim().toLong()
