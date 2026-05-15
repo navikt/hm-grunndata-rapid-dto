@@ -39,7 +39,9 @@ data class ProductRapidDTO(
 data class TechData (
     val key:    String,
     val value:  String,
-    val unit:   String
+    val unit:   String,
+    val sort: Int = 0,
+    val required: Boolean = false,
 )
 
 data class AgreementInfo (
