@@ -4,9 +4,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "2.1.21"
-    id("org.jetbrains.kotlin.plugin.allopen") version "2.1.21"
-    id("com.google.devtools.ksp") version "2.1.21-2.0.1"
+    id("org.jetbrains.kotlin.jvm") version "2.3.0"
+    id("org.jetbrains.kotlin.plugin.allopen") version "2.3.0"
+    id("com.google.devtools.ksp") version "2.3.0"
     id("com.gradleup.shadow") version "9.3.1"
     id ("com.github.ben-manes.versions") version "0.51.0"
     id("java")
@@ -23,15 +23,13 @@ subprojects {
 
     group = "no.nav.hm.grunndata"
     version = properties["version"] ?: "local-build"
-    val jvmTarget = "17"
+    val jvmTarget = "25"
     val junitJupiterVersion = "5.12.0"
-    val kotestVersion = "5.5.5"
     val logbackClassicVersion = "1.5.16"
 
     dependencies {
         api("ch.qos.logback:logback-classic:${logbackClassicVersion}")
         testImplementation("org.junit.jupiter:junit-jupiter-params:${junitJupiterVersion}")
-        testImplementation("io.kotest:kotest-runner-junit5-jvm:${kotestVersion}")
     }
 
     java {
@@ -62,7 +60,7 @@ subprojects {
     }
 
     tasks.withType<Wrapper> {
-        gradleVersion = "8.11"
+        gradleVersion = "9.5.0"
     }
 
 

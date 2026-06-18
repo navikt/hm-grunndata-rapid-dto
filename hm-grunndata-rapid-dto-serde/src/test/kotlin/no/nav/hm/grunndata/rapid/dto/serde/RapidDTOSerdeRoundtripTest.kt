@@ -1,7 +1,6 @@
 package no.nav.hm.grunndata.rapid.dto.serde
 
 import io.micronaut.serde.ObjectMapper
-import io.micronaut.serde.annotation.SerdeImport
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.DynamicTest
@@ -60,14 +59,14 @@ class RapidDTOSerdeRoundtripTest(private val objectMapper: ObjectMapper) {
 
     private fun sampleValue(type: Class<*>, depth: Int): Any? = when {
         type == String::class.java -> "test"
-        type == java.lang.Integer.TYPE || type == java.lang.Integer::class.java -> 1
+        type == Integer.TYPE || type == Integer::class.java -> 1
         type == java.lang.Long.TYPE || type == java.lang.Long::class.java -> 1L
         type == java.lang.Boolean.TYPE || type == java.lang.Boolean::class.java -> true
         type == java.lang.Double.TYPE || type == java.lang.Double::class.java -> 1.0
         type == java.lang.Float.TYPE || type == java.lang.Float::class.java -> 1.0f
         type == java.lang.Short.TYPE || type == java.lang.Short::class.java -> 1.toShort()
         type == java.lang.Byte.TYPE || type == java.lang.Byte::class.java -> 1.toByte()
-        type == java.lang.Character.TYPE || type == java.lang.Character::class.java -> 'a'
+        type == Character.TYPE || type == Character::class.java -> 'a'
         type == UUID::class.java -> UUID.fromString("00000000-0000-0000-0000-000000000001")
         type == LocalDateTime::class.java -> LocalDateTime.of(2025, 1, 1, 12, 0)
         type == LocalDate::class.java -> LocalDate.of(2025, 1, 1)

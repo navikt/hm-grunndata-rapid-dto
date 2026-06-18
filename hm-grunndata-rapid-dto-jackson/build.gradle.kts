@@ -1,18 +1,21 @@
-val micronautVersion="4.10.12"
-val jacksonVersion = "2.18.2"
+val jacksonVersion = "3.1.3"
 
 dependencies {
     implementation(project(":hm-grunndata-rapid-dto"))
-    testImplementation("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
-    testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonVersion}")
-    testImplementation("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
-    testImplementation("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
-    testImplementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}")
+    testImplementation("tools.jackson.module:jackson-module-kotlin:${jacksonVersion}")
+    testImplementation("tools.jackson.core:jackson-core:${jacksonVersion}")
+    testImplementation("tools.jackson.core:jackson-databind:${jacksonVersion}")
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("io.github.classgraph:classgraph:4.8.179")
 }
 
 val githubUser: String? by project
 val githubPassword: String? by project
+
+tasks.test {
+    useJUnitPlatform()
+}
 
 publishing {
     repositories {
