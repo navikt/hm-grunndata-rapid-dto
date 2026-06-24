@@ -73,6 +73,7 @@ enum class MediaSourceType {
     REGISTER,
     EXTERNALURL,
     IMPORT,
+    NEWS,
     UNKNOWN
 }
 
